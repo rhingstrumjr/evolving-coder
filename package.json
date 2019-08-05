@@ -1,7 +1,7 @@
 {
   "name": "evolving-coder-nuxt",
   "version": "1.0.0",
-  "description": "My stunning Nuxt.js project",
+  "description": "My web-development portfolio and blog.",
   "author": "Robert Hingstrum",
   "private": true,
   "scripts": {
