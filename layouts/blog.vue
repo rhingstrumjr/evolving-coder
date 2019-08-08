@@ -1,24 +1,36 @@
 <template>
-  <div>
+  <v-app>
     <Navbar />
-    <b-container>
-      <b-row align-h="center" class="justify-content-sm-center">
-        <b-col sm="12" class="text-center">
-          <h1>Special blog article view</h1>
-          <h2>Might want to have a sidebar</h2>
-          <p>Or, include links to other posts.</p>
-        </b-col>
-        <nuxt />
-      </b-row>
-    </b-container>
-  </div>
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout column align-center justify-center>
+          <v-flex>
+            <nuxt />
+            <PriorAndNextPost :initial-index="currentIndex" />
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue"
+import PriorAndNextPost from "@/components/PriorAndNextPost.vue"
 export default {
   components: {
-    Navbar
+    Navbar,
+    PriorAndNextPost
+  },
+  data: () => {
+    return {
+      currentIndex: null
+    }
+  },
+  created () {
+    const currentPath = this.$route.path
+    const blogPosts = this.$store.state.blogPosts
+    this.currentIndex = blogPosts.findIndex(post => post.path === currentPath)
   }
 }
 </script>

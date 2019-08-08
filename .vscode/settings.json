@@ -1,0 +1,14 @@
+{
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.options.useTabs": true,
+    "vetur.format.scriptInitialIndent": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
+    "vetur.format.defaultFormatter.ts": "none",
+    "vetur.format.defaultFormatter.css": "none",
+    "vetur.format.defaultFormatter.less": "none",
+    "vetur.format.defaultFormatter.postcss": "none",
+    "vetur.format.defaultFormatter.scss": "none"
+}

@@ -5,24 +5,21 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: "babel-eslint",
+    sourcetype: "module"
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:vue/recommended',
-    'eslint:recommended',
-    'prettier/vue',
-    'plugin:prettier/recommended'
+    "@nuxtjs"
   ],
   plugins: [
-    'vue'
+    "vue"
   ],
   // add your custom rules here
   rules: {
     "semi": [2, "never"],
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-    "vue/max-attributes-per-line": "off"
+    "vue/max-attributes-per-line": "off",
+    "quotes": [2, "double"]
   }
 }

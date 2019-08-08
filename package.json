@@ -1,35 +1,37 @@
 {
   "name": "evolving-coder-nuxt",
   "version": "1.0.0",
+  "private": true,
   "description": "My web-development portfolio and blog.",
   "author": "Robert Hingstrum",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/markdownit": "^1.2.6",
-    "bootstrap": "^4.1.3",
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "nuxt": "^2.0.0"
+    "@nuxtjs/vuetify": "^1.2.1",
+    "nuxt": "^2.0.0",
+    "vuetify": "^2.0.5"
   },
   "devDependencies": {
+    "@mdi/font": "^3.9.96",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.2.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-loader": "^2.2.1",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
-  },
-  "prettier": {
-    "semi": false
+    "sass": "^1.17.4",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-vuetify": "^0.6.1",
+    "vuetify-loader": "^1.2.2"
   }
 }
