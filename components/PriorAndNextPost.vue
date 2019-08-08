@@ -5,7 +5,7 @@
       :key="postIndex - 1"
       :to="blogPost[postIndex - 1].path"
     >
-      <v-btn outlined elevation="2" color="info" type="outlined" @click="lowerIndex()">
+      <v-btn outlined elevation="2" color="info" @click="lowerIndex()">
         Prior Post: {{ blogPost[postIndex - 1].title }}
       </v-btn>
     </nuxt-link>

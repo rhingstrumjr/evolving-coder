@@ -50,11 +50,11 @@ export default {
         },
         {
           title: "Portfolio",
-          path: "#"
+          path: "/portfolio"
         },
         {
           title: "Contact",
-          path: "#"
+          path: "/contact"
         }
       ]
     }
