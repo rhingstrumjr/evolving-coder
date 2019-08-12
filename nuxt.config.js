@@ -3,6 +3,9 @@ export default {
   /*
    ** Headers of the page
    */
+  generate: {
+    subFolders: false
+  },
   head: {
     title: "Evolving Coder",
     meta: [
@@ -62,7 +65,11 @@ export default {
   markdownit: {
     preset: "default",
     linkify: true,
-    breaks: true
+    breaks: true,
+    use: [
+      "markdown-it-attrs",
+      "markdown-it-div"
+    ]
   },
   /*
    ** Axios module configuration

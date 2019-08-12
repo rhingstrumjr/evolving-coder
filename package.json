@@ -16,6 +16,9 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/markdownit": "^1.2.6",
     "@nuxtjs/vuetify": "^1.2.1",
+    "dexie": "^2.0.4",
+    "markdown-it-attrs": "^3.0.0",
+    "markdown-it-div": "^1.1.0",
     "nuxt": "^2.0.0",
     "vuetify": "^2.0.5"
   },

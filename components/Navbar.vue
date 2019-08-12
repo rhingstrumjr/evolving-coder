@@ -1,7 +1,5 @@
 <template>
   <v-app-bar app absolute color="white" elevate-on-scroll>
-    <v-app-bar-nav-icon />
-
     <nuxt-link to="/">
       <v-toolbar-title class="grey--text text--darken-3">
         Evolving Coder
@@ -9,30 +7,30 @@
     </nuxt-link>
     <v-spacer />
 
-    <v-btn icon>
-      <v-icon>mdi-triforce</v-icon>
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
+    <v-list class="hidden-xs-only" style="display: flex; padding: 0px">
+      <v-list-item v-for="(item, i) in pages" :key="i" nuxt :to="item.path">
+        <v-list-item-title class="grey--text text--darken-3">
+          {{
+            item.title
+          }}
+        </v-list-item-title>
+      </v-list-item>
+    </v-list>
 
     <v-menu bottom left>
       <template v-slot:activator="{ on }">
-        <v-btn icon v-on="on">
+        <v-btn icon class="hidden-sm-and-up" v-on="on">
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
 
       <v-list>
-        <v-list-item v-for="(item, i) in pages" :key="i">
-          <nuxt-link :to="item.path">
-            <v-list-item-title>
-              {{
-                item.title
-              }}
-            </v-list-item-title>
-          </nuxt-link>
+        <v-list-item v-for="(item, i) in pages" :key="i" nuxt :to="item.path">
+          <v-list-item-title class="grey--text text--darken-3">
+            {{
+              item.title
+            }}
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -65,5 +63,9 @@ export default {
 <style scoped>
 a {
   text-decoration: none
+}
+.v-list-item:active {
+  background-color: #8BC34A;
+  opacity: .1;
 }
 </style>
