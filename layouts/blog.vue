@@ -2,13 +2,17 @@
   <v-app>
     <Navbar />
     <v-content>
-      <v-container fluid fill-height>
-        <v-layout column align-center justify-center>
-          <v-flex>
+      <v-container>
+        <v-row justify="center">
+          <v-col cols="8">
             <nuxt />
+          </v-col>
+        </v-row>
+        <v-row justify="center">
+          <v-col cols="8">
             <PriorAndNextPost :initial-index="currentIndex" />
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </v-container>
     </v-content>
   </v-app>

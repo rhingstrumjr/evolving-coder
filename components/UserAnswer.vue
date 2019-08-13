@@ -1,29 +1,22 @@
 <template>
   <v-container>
-    <h1>Answer to question</h1>
-    <p>Goal: To use indexedDB to store answers to questions posed via the blog.</p>
-
     <v-form
       ref="form"
     >
       <v-textarea
         v-model="userAnswer"
+        rows="2"
+        auto-grow="true"
+        clearable="true"
         label="Answer"
         required
       />
-
-      <v-btn
-        color="error"
-        class="mr-4"
-      >
-        Reset Form
-      </v-btn>
       <v-btn
         color="success"
         class="mr-4"
         @click="addAnswer"
       >
-        Submit Answer
+        Save Answer
       </v-btn>
     </v-form>
   </v-container>
