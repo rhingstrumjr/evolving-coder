@@ -1,11 +1,11 @@
 <template>
   <v-container>
     <v-row class="d-xs-flex-direction: column d-md-flex">
-      <v-col cols="9" offset="2" md="5" md-offset="2">
+      <v-col cols="9" offset="1" md="5" md-offset="1">
         <h1>Welcome to the Evolving Coder Blog!</h1>
         <BlogInfo :post-array="blogPostsToShow" />
       </v-col>
-      <v-col cols="9" offset="2" md="3">
+      <v-col cols="9" offset="1" md="3">
         <h3>Tags</h3>
         <v-container v-for="tag in tagList" :key="tag">
           <v-btn @click="filterPosts(tag)">

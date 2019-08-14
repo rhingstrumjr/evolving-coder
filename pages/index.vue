@@ -16,7 +16,7 @@
     </v-parallax>
     <v-container>
       <v-row class="grey lighten-4">
-        <v-col cols="5" offset="2">
+        <v-col cols="5" offset="1">
           <h1>What I do:</h1>
           <ol>
             <li>Design web applications to help people critically think.</li>
@@ -28,7 +28,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="5" offset="2">
+        <v-col cols="5" offset="1">
           <h1>Current focus:</h1>
           <p>
             Setting up Evolving Coder to track my web development
@@ -37,7 +37,7 @@
         </v-col>
       </v-row>
       <v-row class="grey lighten-4">
-        <v-col cols="5" offset="2">
+        <v-col cols="5" offset="1">
           <h1>Technologies I use:</h1>
           <ul>
             <li>

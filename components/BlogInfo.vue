@@ -16,7 +16,7 @@
 
       <v-card-actions>
         <!-- Use v-for to cycle through tags -->
-        <v-chip outlined color="primary" class="mr-2" v-for="(tag, i) in post.tags" :key="'tag'+i" text>
+        <v-chip v-for="(tag, i) in post.tags" :key="'tag'+i" outlined color="primary" class="mr-2" text>
           {{ tag.toUpperCase() }}
         </v-chip>
       </v-card-actions>

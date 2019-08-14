@@ -1,10 +1,10 @@
 export const state = () => ({
   blogPosts: [
     {
-      title: "Blog 1",
-      path: "/blog/2019/blog-post1",
-      description: "My first post",
-      tags: ["vue", "web development"]
+      title: "How to stay with a web development project",
+      path: "/blog/2019/how-to-stay-with-a-web-development-project",
+      description: "Questions will carry us on",
+      tags: ["web development"]
     },
     {
       title: "Blog 2",
