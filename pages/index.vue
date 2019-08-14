@@ -24,7 +24,7 @@
           </ol>
         </v-col>
         <v-col cols="4">
-          <v-img src="../img/plan-design.jpg"></v-img>
+          <v-img src="../img/plan-design.jpg" />
         </v-col>
       </v-row>
       <v-row>
@@ -37,7 +37,7 @@
         </v-col>
       </v-row>
       <v-row class="grey lighten-4">
-        <v-col cols="8" offset="2">
+        <v-col cols="5" offset="2">
           <h1>Technologies I use:</h1>
           <ul>
             <li>
@@ -65,6 +65,9 @@
               </ul>
             </li>
           </ul>
+        </v-col>
+        <v-col cols="4" align-self="center">
+          <v-img src="../img/web-tech.png" />
         </v-col>
       </v-row>
     </v-container>

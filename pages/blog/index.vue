@@ -1,26 +1,84 @@
 <template>
   <v-container>
-    <v-row justify="center">
-      <v-col cols="8">
+    <v-row class="d-xs-flex-direction: column d-md-flex">
+      <v-col cols="9" offset="2" md="5" md-offset="2">
         <h1>Welcome to the Evolving Coder Blog!</h1>
-        <p>The list of posts will be here.</p>
-        <p>The posts will be able to be sorted by date and tag.</p>
-        <p>The posts will include a description of the article.</p>
-        <ul>
-          <n-link v-for="(post, index) in blogPosts" :key="index" :to="post.path">
-            <li>{{ post.title }}<br> {{ post.description }}</li>
-          </n-link>
-        </ul>
+        <BlogInfo :post-array="blogPostsToShow" />
+      </v-col>
+      <v-col cols="9" offset="2" md="3">
+        <h3>Tags</h3>
+        <v-container v-for="tag in tagList" :key="tag">
+          <v-btn @click="filterPosts(tag)">
+            {{ tag }}
+          </v-btn>
+          <br>
+        </v-container>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import BlogInfo from "@/components/BlogInfo.vue"
 export default {
+  components: {
+    BlogInfo
+  },
+  data () {
+    return {
+      blogPostsToShow: [],
+      filterTags: []
+    }
+  },
   computed: {
     blogPosts () {
       return this.$store.state.blogPosts
+    },
+    tagList () {
+      const tlist = []
+      this.$store.state.blogPosts.forEach((post) => {
+        post.tags.forEach((tag) => {
+          if (!tlist.includes(tag)) {
+            tlist.push(tag)
+          }
+        })
+      })
+      return tlist
+    }
+  },
+  created () {
+    if (this.blogPosts.length < 5) {
+      this.blogPostsToShow = this.blogPosts.slice(0)
+    } else {
+      this.blogPostsToShow = this.blogPosts.slice(this.blogPosts.length - 5)
+    }
+  },
+  methods: {
+    filterPosts (filterTag) {
+      this.blogPostsToShow = []
+      let newBlogPostList = []
+      if (this.filterTags.includes(filterTag)) {
+        this.filterTags = this.filterTags.filter((tag) => {
+          return tag !== filterTag
+        })
+      } else {
+        this.filterTags.push(filterTag)
+      }
+      this.blogPosts.forEach((post) => {
+        this.filterTags.forEach((tag) => {
+          if (post.tags.includes(tag) && !newBlogPostList.includes(post)) {
+            newBlogPostList.push(post)
+          }
+        })
+      })
+      if (newBlogPostList.length === 0) {
+        if (this.blogPosts.length < 5) {
+          newBlogPostList = this.blogPosts.slice(0)
+        } else {
+          newBlogPostList = this.blogPosts.slice(this.blogPosts.length - 5)
+        }
+      }
+      this.blogPostsToShow = newBlogPostList.reverse()
     }
   },
   head () {
