@@ -16,20 +16,55 @@
     </v-parallax>
     <v-container>
       <v-row class="grey lighten-4">
-        <v-col cols="8" offset="2">
+        <v-col cols="5" offset="2">
           <h1>What I do:</h1>
-          <p>
-            Design web applications to help people critically think.
-          </p>
+          <ol>
+            <li>Design web applications to help people critically think.</li>
+            <li>Document how I learn web development</li>
+          </ol>
+        </v-col>
+        <v-col cols="4">
+          <v-img src="../img/plan-design.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="8" offset="2">
+        <v-col cols="5" offset="2">
           <h1>Current focus:</h1>
           <p>
             Setting up Evolving Coder to track my web development
             journey.
           </p>
+        </v-col>
+      </v-row>
+      <v-row class="grey lighten-4">
+        <v-col cols="8" offset="2">
+          <h1>Technologies I use:</h1>
+          <ul>
+            <li>
+              Frontend
+              <ul>
+                <li>Vue &amp; Nuxt &amp; Vuetify</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+              </ul>
+            </li>
+            <li>
+              Backend and databases
+              <ul>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Google Firebase</li>
+                <li>IndexedDB via Dexie</li>
+              </ul>
+            </li>
+            <li>
+              Version control
+              <ul>
+                <li>Git</li>
+                <li>Github</li>
+              </ul>
+            </li>
+          </ul>
         </v-col>
       </v-row>
     </v-container>

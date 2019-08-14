@@ -6,15 +6,27 @@
       <v-textarea
         v-model="userAnswer"
         rows="2"
-        auto-grow="true"
-        clearable="true"
+        auto-grow
+        clearable
         label="Answer"
         required
+        @keyup.ctrl.enter="addAnswer"
       />
-      <v-btn
-        color="success"
-        class="mr-4"
-        @click="addAnswer"
+      <v-btn v-if="isSaved"
+             color="success"
+             class="mr-4"
+             disabled
+             outlined
+             small
+      >
+        Answer is saved
+      </v-btn>
+      <v-btn v-else
+             color="success"
+             class="mr-4"
+             small
+             outlined
+             @click="addAnswer"
       >
         Save Answer
       </v-btn>
@@ -35,7 +47,17 @@ export default {
     return {
       userAnswer: "",
       questionNumber: this.qNumber,
-      pastAnswers: []
+      pastAnswers: [],
+      isSaved: false,
+      userAnswerChanges: 0
+    }
+  },
+  watch: {
+    userAnswer () {
+      if (this.userAnswerChanges > 1) {
+        this.isSaved = false
+      }
+      this.userAnswerChanges++
     }
   },
   async mounted () {
@@ -44,6 +66,7 @@ export default {
       this.pastAnswers.forEach((obj) => {
         if (obj.questionNumber === this.questionNumber) {
           this.userAnswer = obj.answer
+          this.isSaved = true
         }
       })
     }
@@ -54,6 +77,7 @@ export default {
         questionNumber: this.questionNumber,
         answer: this.userAnswer
       })
+      this.isSaved = true
     }
   }
 }
