@@ -1,11 +1,13 @@
 <template>
   <v-container>
-    <v-card max-width="540" v-for="(post, index) in postList" :key="'post'+index" class="mx-auto mb-4" outlined>
+    <v-card v-for="(post, index) in postList" :key="'post'+index" max-width="540" class="mx-auto mb-4" outlined>
       <v-list-item three-line>
         <v-list-item-content>
           <v-list-item-title class="title mb-1">
             <nuxt-link :to="post.path">
-              <v-icon class="pr-2">mdi-triforce</v-icon>{{ post.title }}
+              <v-icon class="pr-2">
+                mdi-triforce
+              </v-icon>{{ post.title }}
             </nuxt-link>
           </v-list-item-title>
           <v-list-item-subtitle>{{ post.description }}</v-list-item-subtitle>
