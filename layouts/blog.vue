@@ -4,12 +4,12 @@
     <v-content>
       <v-container>
         <v-row justify="center">
-          <v-col cols="8">
+          <v-col cols="10">
             <nuxt />
           </v-col>
         </v-row>
         <v-row justify="center">
-          <v-col cols="8">
+          <v-col cols="10">
             <PriorAndNextPost :initial-index="currentIndex" />
           </v-col>
         </v-row>
