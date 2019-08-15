@@ -16,19 +16,19 @@
     </v-parallax>
     <v-container>
       <v-row class="grey lighten-4">
-        <v-col cols="5" offset="1">
+        <v-col xs="11" sm="5" offset="1">
           <h1>What I do:</h1>
           <ol>
             <li>Design web applications to help people critically think.</li>
             <li>Document how I learn web development</li>
           </ol>
         </v-col>
-        <v-col cols="4">
-          <v-img src="../img/plan-design.jpg" />
+        <v-col xs="11" offset="1" offset-sm="0" sm="4">
+          <v-img min-width="230" max-width="420" src="../img/plan-design.jpg" />
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="5" offset="1">
+        <v-col xs="11" sm="5" offset="1">
           <h1>Current focus:</h1>
           <p>
             Setting up Evolving Coder to track my web development
@@ -37,7 +37,7 @@
         </v-col>
       </v-row>
       <v-row class="grey lighten-4">
-        <v-col cols="5" offset="1">
+        <v-col xs="11" sm="5" offset="1">
           <h1>Technologies I use:</h1>
           <ul>
             <li>
@@ -66,8 +66,8 @@
             </li>
           </ul>
         </v-col>
-        <v-col cols="4" align-self="center">
-          <v-img src="../img/web-tech.png" />
+        <v-col xs="11" offset="1" offset-sm="0" sm="4" align-self="center">
+          <v-img min-width="230" max-width="420" src="../img/web-tech.png" />
         </v-col>
       </v-row>
     </v-container>

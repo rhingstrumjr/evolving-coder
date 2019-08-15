@@ -1,17 +1,15 @@
 <template>
   <v-container>
-    <v-card v-for="(post, index) in postList" :key="'post'+index" class="mx-auto mb-4" max-width="344" outlined>
+    <v-card max-width="540" v-for="(post, index) in postList" :key="'post'+index" class="mx-auto mb-4" outlined>
       <v-list-item three-line>
         <v-list-item-content>
-          <v-list-item-title class="headline mb-1">
+          <v-list-item-title class="title mb-1">
             <nuxt-link :to="post.path">
-              {{ post.title }}
+              <v-icon class="pr-2">mdi-triforce</v-icon>{{ post.title }}
             </nuxt-link>
           </v-list-item-title>
           <v-list-item-subtitle>{{ post.description }}</v-list-item-subtitle>
         </v-list-item-content>
-
-        <v-list-item-avatar tile size="80" color="grey" />
       </v-list-item>
 
       <v-card-actions>
@@ -44,3 +42,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+a {
+  text-decoration: none;
+  color: rgb(46, 47, 63)
+}
+
+a:hover {
+  text-decoration: underline
+}
+</style>
