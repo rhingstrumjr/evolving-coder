@@ -1,4 +1,3 @@
-import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin"
 export default {
   mode: "universal",
   /*
@@ -18,7 +17,8 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "stylesheet", type: "text/css", href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" }]
   },
   /*
    ** Customize the progress-bar color
@@ -31,22 +31,13 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/vuetify"],
+  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
   devModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    "@nuxtjs/eslint-module",
-    [
-      "@nuxtjs/vuetify",
-      {
-        defaultAssets: {
-          font: true,
-          icons: "mdi"
-        }
-      }
-    ]
+    "@nuxtjs/eslint-module"
   ],
   /*
    ** Nuxt.js modules
@@ -56,7 +47,15 @@ export default {
     "@nuxtjs/axios",
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/markdownit
     "@nuxtjs/markdownit",
-    "@nuxtjs/vuetify"
+    [
+      "@nuxtjs/vuetify",
+      {
+        defaultAssets: {
+          font: true,
+          icons: "mdi"
+        }
+      }
+    ]
   ],
   loaders: {
     vue: {
@@ -81,10 +80,6 @@ export default {
    ** Build configuration
    */
   build: {
-
-    plugins: [new VuetifyLoaderPlugin()],
-    extractCSS: true,
-    transpile: ["vuetify/lib"],
     /*
      ** You can extend webpack config here
      */

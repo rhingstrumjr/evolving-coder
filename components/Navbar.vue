@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app absolute color="white" elevate-on-scroll>
+  <v-app-bar app color="white" elevate-on-scroll hide-on-scroll>
     <nuxt-link to="/">
       <v-toolbar-title class="grey--text text--darken-3">
         Evolving Coder
