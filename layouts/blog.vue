@@ -8,8 +8,8 @@
             <nuxt />
           </v-col>
         </v-row>
-        <v-row justify="center">
-          <v-col cols="12">
+        <v-row>
+          <v-col xs="12" sm="6" offset-sm="3">
             <PriorAndNextPost :initial-index="currentIndex" />
           </v-col>
         </v-row>
