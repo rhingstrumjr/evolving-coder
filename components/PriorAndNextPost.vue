@@ -5,18 +5,28 @@
       :key="postIndex - 1"
       :to="blogPost[postIndex - 1].path"
     >
-      <v-btn outlined elevation="2" color="info" @click="lowerIndex()">
-        Prior Post: {{ blogPost[postIndex - 1].title }}
-      </v-btn>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on }">
+          <v-btn outlined elevation="2" color="info" @click="lowerIndex()" v-on="on">
+            Prior Post
+          </v-btn>
+        </template>
+        <span>{{ blogPost[postIndex - 1].title }}</span>
+      </v-tooltip>
     </nuxt-link>
     <nuxt-link
       v-if="postIndex + 1 < blogPost.length"
       :key="postIndex + 1"
       :to="blogPost[postIndex + 1].path"
     >
-      <v-btn outlined elevation="2" color="info" @click="raiseIndex()">
-        Next Post: {{ blogPost[postIndex + 1].title }}
-      </v-btn>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on }">
+          <v-btn outlined elevation="2" color="info" class="float-right" @click="raiseIndex()" v-on="on">
+            Next Post
+          </v-btn>
+        </template>
+        <span>{{ blogPost[postIndex + 1].title }}</span>
+      </v-tooltip>
     </nuxt-link>
   </div>
 </template>
@@ -53,5 +63,12 @@ export default {
 <style scoped>
 a {
   text-decoration: none
+}
+
+button {
+  justify-content: left;
+  overflow: auto;
+  white-space: nowrap;
+  margin-top: 5px;
 }
 </style>

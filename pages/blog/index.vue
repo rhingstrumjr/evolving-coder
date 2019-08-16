@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <v-row class="d-xs-flex-direction: column d-md-flex">
-      <v-col cols="9" offset="1" md="7" md-offset="1">
+      <v-col cols="10" offset="1" md="7" md-offset="1">
         <h1 style="display: block; margin: auto; max-width: 540px">
           Welcome to the Evolving Coder Blog!
         </h1>
         <BlogInfo :post-array="blogPostsToShow" />
       </v-col>
-      <v-col cols="9" offset="1" md="3" align-self="center">
+      <v-col cols="10" offset="1" md="3" align-self="center">
         <v-container style="max-width: 540px">
           <h3>Tags</h3>
           <v-container v-for="tag in tagList" :key="tag">
