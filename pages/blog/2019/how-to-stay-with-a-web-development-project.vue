@@ -48,3 +48,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h1 {
+    margin-bottom: 1em
+  }
+
+h3::before {
+    content: url('~@/static/svg/answer.svg');
+  }
+
+h3 {
+  color:rgb(0, 129, 11)
+}
+</style>
