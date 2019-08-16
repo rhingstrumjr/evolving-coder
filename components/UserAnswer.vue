@@ -7,9 +7,11 @@
         v-model="userAnswer"
         rows="2"
         auto-grow
+        color="#33691"
         clearable
         label="Answer"
         required
+        style="font-family: cursive"
         @keyup.ctrl.enter="addAnswer"
       />
       <v-btn v-if="isSaved"
