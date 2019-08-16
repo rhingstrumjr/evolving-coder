@@ -7,10 +7,10 @@ export const state = () => ({
       tags: ["web development"]
     },
     {
-      title: "Blog 2",
-      path: "/blog/2019/blog-post2",
-      description: "My second post",
-      tags: ["vue", "HTML"]
+      title: "Interested in coding?",
+      path: "/blog/2019/interested-in-coding",
+      description: "A start on the coding path",
+      tags: ["web development", "HTML", "CSS", "JS"]
     },
     {
       title: "Blog 3",
