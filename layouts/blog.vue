@@ -3,8 +3,8 @@
     <Navbar />
     <v-content>
       <v-container>
-        <v-row justify="center">
-          <v-col cols="10" offset="1">
+        <v-row>
+          <v-col cols="10" offset="1" lg="8" offset-lg="2">
             <nuxt />
           </v-col>
         </v-row>

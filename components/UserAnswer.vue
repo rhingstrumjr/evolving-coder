@@ -21,15 +21,20 @@
       >
         Answer is saved
       </v-btn>
-      <v-btn v-else
-             color="success"
-             class="mr-4"
-             small
-             outlined
-             @click="addAnswer"
-      >
-        Save Answer
-      </v-btn>
+      <v-tooltip v-else right close-delay="1000" transition="slide-x-transition">
+        <template v-slot:activator="{ on }">
+          <v-btn color="success"
+                 class="mr-4"
+                 small
+                 outlined
+                 v-on="on"
+                 @click="addAnswer"
+          >
+            Save Answer
+          </v-btn>
+        </template>
+        <span>ctrl + enter also saves</span>
+      </v-tooltip>
     </v-form>
   </v-container>
 </template>

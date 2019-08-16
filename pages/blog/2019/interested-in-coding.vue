@@ -5,7 +5,7 @@
 
   We hear these titles all the time now.  You also might have heard stories of people learning to code and getting a job they love.  Who doesn't want that?
 
-  ### What have you dreamed of creating if you had the skills of computer programmer?
+  ### What have you dreamed of creating related to computer programming?
   <UserAnswer :q-number="3" />
 
   I'm going to assume you have an interest in coding if you are reading this.  Here are my suggestions if you continue down this path.
@@ -31,3 +31,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h1 {
+    margin-bottom: 1em
+  }
+
+h3::before {
+    content: url('~@/static/svg/answer.svg');
+  }
+
+h3 {
+  color:rgb(0, 129, 11)
+}
+</style>
