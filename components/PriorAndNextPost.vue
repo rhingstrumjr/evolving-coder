@@ -5,7 +5,7 @@
       :key="postIndex - 1"
       :to="blogPost[postIndex - 1].path"
     >
-      <v-tooltip bottom>
+      <v-tooltip right>
         <template v-slot:activator="{ on }">
           <v-btn outlined elevation="2" color="info" @click="lowerIndex()" v-on="on">
             Prior Post
@@ -19,7 +19,7 @@
       :key="postIndex + 1"
       :to="blogPost[postIndex + 1].path"
     >
-      <v-tooltip bottom>
+      <v-tooltip left>
         <template v-slot:activator="{ on }">
           <v-btn outlined elevation="2" color="info" class="float-right" @click="raiseIndex()" v-on="on">
             Next Post
