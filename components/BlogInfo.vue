@@ -3,7 +3,7 @@
     <v-card v-for="(post, index) in postList" :key="'post'+index" max-width="540" class="mx-auto mb-4" outlined>
       <v-list-item three-line>
         <v-list-item-content>
-          <v-list-item-title class="title mb-1">
+          <v-list-item-title style="white-space: normal" class="title mb-1">
             <nuxt-link :to="post.path">
               <v-icon class="pr-2">
                 mdi-triforce
@@ -14,9 +14,8 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-card-actions>
-        <!-- Use v-for to cycle through tags -->
-        <v-chip v-for="(tag, i) in post.tags" :key="'tag'+i" outlined color="primary" class="mr-2" text>
+      <v-card-actions style="flex-wrap: wrap" class="d-flex">
+        <v-chip v-for="(tag, i) in post.tags" :key="'tag'+i" outlined color="primary" class="mr-2 mt-1" text>
           {{ tag.toUpperCase() }}
         </v-chip>
       </v-card-actions>

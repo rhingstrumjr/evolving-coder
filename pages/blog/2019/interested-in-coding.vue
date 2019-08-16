@@ -1,7 +1,7 @@
 <template lang="md">
   # Interested in coding?
 
-  Computer programmer.  Coder.  Software developer.  Web designer.  Web developer.  Backend developer.  Frontend developer.  Fullstack developer.  The list goes on.
+  Computer programmer.  Coder.  Software developer.  Web designer.  Web developer.  Backend developer.  Frontend developer.  Fullstack developer.  The list of titles goes on.
 
   We hear these titles all the time now.  You also might have heard stories of people learning to code and getting a job they love.  Who doesn't want that?
 
