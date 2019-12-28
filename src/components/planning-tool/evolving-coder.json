@@ -1,0 +1,327 @@
+{
+	"key": "cr1",
+"answer": "app",
+"shownQuestion": "What will you create?",
+"parent": null,
+"children": [
+    {
+        "key": "cr1q1",
+        "answer": "job board",
+        "shownQuestion": "What qualities will it have?",
+        "children": [
+            {
+                "key": "cr1q1p1",
+                "answer": "lists",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [
+                    {
+                        "key": "cr1q1p1q1",
+                        "answer": "Job name",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p1"
+                    },
+                    {
+                        "key": "cr1q1p1q2",
+                        "answer": "short description",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p1"
+                    },
+                    {
+                        "key": "cr1q1p1q3",
+                        "answer": "link to detailed page",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p1"
+                    },
+                    {
+                        "key": "cr1q1p1q4",
+                        "answer": "money for the project",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p1"
+                    },
+                    {
+                        "key": "cr1q1p1q5",
+                        "answer": "date posted",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p1"
+                    }
+                ],
+                "parent": "cr1q1"
+            },
+            {
+                "key": "cr1q1p2",
+                "answer": "job-creation form",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [
+                    {
+                        "key": "cr1q1p2q1",
+                        "answer": "purpose",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p2"
+                    },
+                    {
+                        "key": "cr1q1p2q2",
+                        "answer": "descriptions",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p2"
+                    },
+                    {
+                        "key": "cr1q1p2q3",
+                        "answer": "payment",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p2"
+                    },
+                    {
+                        "key": "cr1q1p2q4",
+                        "answer": "visuals",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [
+                            {
+                                "key": "cr1q1p2q4p1",
+                                "answer": "wireframe builder",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q1p2q4"
+                            }
+                        ],
+                        "parent": "cr1q1p2"
+                    },
+                    {
+                        "key": "cr1q1p2q5",
+                        "answer": "preferred languages",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p2"
+                    },
+                    {
+                        "key": "cr1q1p2q6",
+                        "answer": "type of job",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p2"
+                    }
+                ],
+                "parent": "cr1q1"
+            },
+            {
+                "key": "cr1q1p3",
+                "answer": "description pages",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [
+                    {
+                        "key": "cr1q1p3q1",
+                        "answer": "title",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    },
+                    {
+                        "key": "cr1q1p3q2",
+                        "answer": "company/person contracting the work",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    },
+                    {
+                        "key": "cr1q1p3q3",
+                        "answer": "languages wanted",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    },
+                    {
+                        "key": "cr1q1p3q4",
+                        "answer": "wireframe mockup",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    },
+                    {
+                        "key": "cr1q1p3q5",
+                        "answer": "user stories",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    },
+                    {
+                        "key": "cr1q1p3q6",
+                        "answer": "money offered",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q1p3"
+                    }
+                ],
+                "parent": "cr1q1"
+            }
+        ],
+        "parent": "cr1"
+    },
+    {
+        "key": "cr1q2",
+        "answer": "educational",
+        "shownQuestion": "What qualities will it have?",
+        "children": [
+            {
+                "key": "cr1q2p1",
+                "answer": "blog",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [],
+                "parent": "cr1q2"
+            },
+            {
+                "key": "cr1q2p2",
+                "answer": "reference articles",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [
+                    {
+                        "key": "cr1q2p2q1",
+                        "answer": "teamwork",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q2p2"
+                    },
+                    {
+                        "key": "cr1q2p2q2",
+                        "answer": "Git and Github",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [
+                            {
+                                "key": "cr1q2p2q2p1",
+                                "answer": "how-to-fork article",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q2"
+                            },
+                            {
+                                "key": "cr1q2p2q2p2",
+                                "answer": "writing good commit messages",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q2"
+                            }
+                        ],
+                        "parent": "cr1q2p2"
+                    },
+                    {
+                        "key": "cr1q2p2q3",
+                        "answer": "languages",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [
+                            {
+                                "key": "cr1q2p2q3p1",
+                                "answer": "javascript articles",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q3"
+                            },
+                            {
+                                "key": "cr1q2p2q3p2",
+                                "answer": "Vue articles",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q3"
+                            },
+                            {
+                                "key": "cr1q2p2q3p3",
+                                "answer": "React articles",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q3"
+                            },
+                            {
+                                "key": "cr1q2p2q3p4",
+                                "answer": "node.js",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q3"
+                            },
+                            {
+                                "key": "cr1q2p2q3p5",
+                                "answer": "python articles",
+                                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                                "children": [],
+                                "parent": "cr1q2p2q3"
+                            }
+                        ],
+                        "parent": "cr1q2p2"
+                    }
+                ],
+                "parent": "cr1q2"
+            },
+            {
+                "key": "cr1q2p3",
+                "answer": "boilerplate/example links",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [],
+                "parent": "cr1q2"
+            }
+        ],
+        "parent": "cr1"
+    },
+    {
+        "key": "cr1q3",
+        "answer": "community-focused",
+        "shownQuestion": "What qualities will it have?",
+        "children": [
+            {
+                "key": "cr1q3p1",
+                "answer": "forum",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [],
+                "parent": "cr1q3"
+            },
+            {
+                "key": "cr1q3p2",
+                "answer": "team board (slack channels??)",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [],
+                "parent": "cr1q3"
+            },
+            {
+                "key": "cr1q3p3",
+                "answer": "user profiles",
+                "shownQuestion": "What structures need to be in place to guarantee this quality?",
+                "children": [
+                    {
+                        "key": "cr1q3p3q1",
+                        "answer": "messages",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q3p3"
+                    },
+                    {
+                        "key": "cr1q3p3q2",
+                        "answer": "location",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q3p3"
+                    },
+                    {
+                        "key": "cr1q3p3q3",
+                        "answer": "preferred languages",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q3p3"
+                    },
+                    {
+                        "key": "cr1q3p3q4",
+                        "answer": "Github link",
+                        "shownQuestion": "What qualities will it have?",
+                        "children": [],
+                        "parent": "cr1q3p3"
+                    }
+                ],
+                "parent": "cr1q3"
+            }
+        ],
+        "parent": "cr1"
+    }
+]
+}
