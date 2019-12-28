@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 <template>
   <div>
-    <input id="answer" v-model="userAnswer" type="text" @keyup.enter="saveAnswer">
-    <button @click="$emit('save-answer', userAnswer)">
+    <input id="answer" v-model="userAnswer" type="text" @keyup.enter="save">
+    <button @click="save">
       Save Answer
     </button>
   </div>
@@ -14,29 +13,10 @@ export default {
     return {
       userAnswer: ""
     }
-  }
-}
-</script>
-
-<style scoped>
-#answer {
-    background-color: beige
-}
-</style>
-||||||| c8788a8
-=======
-<template>
-  <div>
-    <input id="answer" type="text" v-model="userAnswer" @keyup.enter="saveAnswer">
-    <button @click="$emit('save-answer', userAnswer)">Save Answer</button>
-  </div>
-</template>
-
-<script>
-export default {
-  data () {
-    return {
-      userAnswer: ""
+  },
+  methods: {
+    save () {
+      this.$emit('save-answer', this.userAnswer)
     }
   }
 }
@@ -47,4 +27,3 @@ export default {
     background-color: beige
 }
 </style>
->>>>>>> 01ad4d2b76533eb822d04e71cd6f5e0ed2ebc513

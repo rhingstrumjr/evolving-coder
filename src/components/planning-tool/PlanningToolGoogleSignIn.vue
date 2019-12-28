@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-btn outlined fab color="#4285F4" @click="googleSignIn">
-      <v-icon>fab fa-google</v-icon>
-    </v-btn>
+    <button @click="googleSignIn">
+      Google Sign In
+    </button>
     <div>Current user is {{ user }} and the ID is {{ userID }}</div>
   </div>
 </template>
