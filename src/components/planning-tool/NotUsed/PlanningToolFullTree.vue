@@ -39,31 +39,29 @@ export default {
       required: true
     }
   },
-  data () {
-    return { showChildren: true }
+  data() {
+    return { showChildren: true };
   },
   computed: {
-    iconClasses () {
+    iconClasses() {
       return {
         "fa-plus-square-o": !this.showChildren,
         "fa-minus-square-o": this.showChildren
-      }
+      };
     },
-    labelClasses () {
-      return { "has-children": this.nodes }
+    labelClasses() {
+      return { "has-children": this.nodes };
     },
-    indent () {
-      return { transform: `translate(${this.depth * 30}px)` }
+    indent() {
+      return { transform: `translate(${this.depth * 30}px)` };
     }
   },
   methods: {
-    toggleChildren () {
-      this.showChildren = !this.showChildren
+    toggleChildren() {
+      this.showChildren = !this.showChildren;
     }
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

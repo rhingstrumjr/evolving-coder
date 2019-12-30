@@ -1,73 +1,71 @@
 <template>
   <div>
     <div :style="indent" @click="toggleChildren">
-      <span v-if="answers[answerKey].children">
+      <span v-if="answers[keyToUse].children">
         <font-awesome-icon v-if="showChildren" icon="minus-square" />
         <font-awesome-icon v-if="!showChildren" icon="plus-square" />
       </span>
       <span v-else>
         <font-awesome-icon icon="square" />
       </span>
-      {{ answers[answerKey].answer }}
+      {{ answers[keyToUse].answer }}
+      <button @click="movePlan(keyToUse)">Plan here</button>
     </div>
-    <div v-if="answers[answerKey].children">
     <div v-if="showChildren">
-      <planning-tool-answers
-        v-for="child of answers[answerKey].children"
+      <PlanningToolAnswers
+        v-for="child of answers[keyToUse].children"
         :key="child"
-        :answers="answers"
+        :keyToUse="child"
         :depth="depth + 1"
-        :answer-key="child"
       />
-    </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex";
 export default {
   name: "PlanningToolAnswers",
   props: {
-    answers: {
-      type: Object,
-      required: true
+    keyToUse: {
+      required: true,
+      type: String
     },
     depth: {
-      type: Number,
-      required: true
-    },
-    answerKey: {
-      type: String,
-      required: true
+      required: true,
+      default: 0
     }
   },
-  data () {
+  data() {
     return {
       showChildren: true
-    }
+    };
   },
   computed: {
-    iconClasses () {
+    ...mapState([
+      "answers",
+      "answersToAdd",
+      "parentKey",
+      "rootKey",
+      "depthForQuestion"
+    ]),
+    indent() {
+      return { transform: `translate(${this.depth * 50}px)` };
+    },
+    iconClasses() {
       return {
         "fa-plus-square-o": !this.showChildren,
         "fa-minus-square-o": this.showChildren
-      }
-    },
-    labelClasses () {
-      return { "has-children": this.nodes }
-    },
-    indent () {
-      return { transform: `translate(${this.depth * 30}px)` }
+      };
     }
   },
   methods: {
-    toggleChildren () {
-      this.showChildren = !this.showChildren
+    ...mapMutations(["movePlan"]),
+    toggleChildren() {
+      this.showChildren = !this.showChildren;
     }
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

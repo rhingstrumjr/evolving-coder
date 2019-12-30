@@ -8,30 +8,32 @@
 </template>
 
 <script>
-import firebase from "firebase"
+import firebase from "firebase";
 export default {
-  data () {
+  data() {
     return {
       user: "",
       userID: ""
-    }
+    };
   },
   methods: {
-    googleSignIn () {
-      this.provider = new firebase.auth.GoogleAuthProvider()
-      firebase.auth().signInWithPopup(this.provider).then((result) => {
-        // store the user or wathever
-        this.user = result.user.displayName
-        this.userID = result.user.uid
-      }).catch((e) => {
-        this.$snotify.error(e.message)
-        console.log(e)
-      })
+    googleSignIn() {
+      this.provider = new firebase.auth.GoogleAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(this.provider)
+        .then(result => {
+          // store the user or wathever
+          this.user = result.user.displayName;
+          this.userID = result.user.uid;
+        })
+        .catch(e => {
+          this.$snotify.error(e.message);
+          console.log(e);
+        });
     }
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

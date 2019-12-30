@@ -1,45 +1,46 @@
 <template>
   <div>
+    <PlanningToolQuestions />
     <PlanningToolAnswerRecorder @save-answer="saveAnswer" />
-    <PlanningToolAnswers v-if="Object.keys(answers).length > 0" :answers="answers" :answer-key="rootKey" :depth="0" />
+    <div v-if="rootKey">
+      <PlanningToolAnswers :keyToUse="rootKey" :depth="0" />
+    </div>
   </div>
 </template>
 
 <script>
-import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder"
-import PlanningToolAnswers from "./PlanningToolAnswers"
+import { mapState, mapMutations } from "vuex";
+
+import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder";
+import PlanningToolAnswers from "./PlanningToolAnswers";
+import PlanningToolQuestions from "./PlanningToolQuestions";
+
 export default {
   components: {
     PlanningToolAnswerRecorder,
-    PlanningToolAnswers
+    PlanningToolAnswers,
+    PlanningToolQuestions
   },
-  data () {
-    return {
-      answers: {},
-      answerToAdd: {
-        answer: "",
-        parent: null,
-        children: null
-      },
-      childKey: null,
-      parentKey: null,
-      rootKey: null
-    }
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState([
+      "answers",
+      "answersToAdd",
+      "parentKey",
+      "rootKey",
+      "depthForQuestion"
+    ])
   },
   methods: {
-    saveAnswer (sentAnswer) {
-      this.answerToAdd.answer = sentAnswer
-      console.log(this.answerToAdd.answer)
-      const newKey = Math.random().toString(36).substr(2, 9)
-      if (this.rootKey === null) {
-        this.rootKey = newKey
-      }
-      this.$set(this.answers, newKey, this.answerToAdd)
+    ...mapMutations(["saveAnswer"]),
+    movePlan(parentKey, depth) {
+      this.parentKey = parentKey;
+      this.depthForQuestion = depth + 1;
     }
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
