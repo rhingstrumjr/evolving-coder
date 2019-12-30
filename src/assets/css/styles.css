@@ -1,34 +1,40 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 
-* {
-    color:  rgb(230, 230, 230);
+:root {
+    --ec-active-color: #44BBAC;
+    --ec-bg-color: #BBAC44;
+    --ec-attention-color: #ac44bb;
 }
-
-body {
-    background-color: rgb(50, 50, 70);
-}
-
 /* Button layout for Evolving Coder */
 
 button {
     border-style: outset;
-    border-color: rgba(50, 50, 70, .4);
     border-radius: 8px;
-    border-width: 3px;
-    background-color: rgb(65, 65, 85);
-    padding: .2em;
+    border-width: 2px;
+    border-color: var(--ec-bg-color);
+    background-color: #BBAC44;
+    padding: 0 .2em;
+    margin: .1em 0;
     color: rgb(230, 230, 230);
     font-variant: small-caps;
 }
 
 button:hover {
     cursor: pointer;
+    color: var(--ec-attention-color);
 }
 
 button:active {
     border-style: ridge;
+    background-color: #44BBAC;
 }
 
 button:focus {
     outline:0;
+}
+
+button:disabled {
+    background-color: rgba(187, 171, 68, 0.4);
+    cursor: default;
+    color: rgb(230, 230, 230);
 }

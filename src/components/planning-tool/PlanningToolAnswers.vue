@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div :style="indent" @click="toggleChildren">
-      <span v-if="answers[keyToUse].children">
+    <div :style="indent">
+      <span v-if="answers[keyToUse].children" @click="toggleChildren">
         <font-awesome-icon v-if="showChildren" icon="minus-square" />
         <font-awesome-icon v-if="!showChildren" icon="plus-square" />
       </span>
