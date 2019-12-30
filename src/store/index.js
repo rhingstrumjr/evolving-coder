@@ -54,18 +54,18 @@ const store = new Vuex.Store({
     },
     deleteAnswer(state, key) {
       let parent = state.answers[key].parent;
-      state.parentKey = parent;
       let index = state.answers[parent].children.indexOf(key);
       state.answers[parent].children.splice(index, 1);
       let keysToDelete = [];
       keysToDelete.push(key);
-      console.log(keysToDelete);
       keysToDelete.forEach(element => {
         if (state.answers[element].children) {
           keysToDelete = [...keysToDelete, ...state.answers[element].children];
-          console.log(keysToDelete);
         }
       });
+      if (keysToDelete.indexOf(state.parentKey) > -1) {
+        state.parentKey = parent;
+      }
       keysToDelete.reverse().forEach(victim => {
         Vue.delete(state.answers, victim);
       });

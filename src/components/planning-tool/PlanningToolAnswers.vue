@@ -1,7 +1,12 @@
 <template>
   <div>
     <div :style="indent" :class="{ path: ancestors.includes(keyToUse) }">
-      <span v-if="answers[keyToUse].children" @click="toggleChildren">
+      <span
+        v-if="
+          answers[keyToUse].children && answers[keyToUse].children.length > 0
+        "
+        @click="toggleChildren"
+      >
         <font-awesome-icon v-if="showChildren" icon="minus-square" />
         <font-awesome-icon v-if="!showChildren" icon="plus-square" />
       </span>

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <font-awesome-icon icon="trash-alt" @click="deleteAnswer(keyToDelete)" />
-  </div>
+  <font-awesome-icon icon="trash-alt" @click="deleteAnswer(keyToDelete)" />
 </template>
 
 <script>

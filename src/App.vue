@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <SiteNavBar />
-    <router-view />
+  <div id="app" class="ec-grid-hcf">
+    <SiteNavBar class="ec-header" />
+    <router-view class="ec-content" />
   </div>
 </template>
 
