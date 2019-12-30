@@ -1,0 +1,22 @@
+<template>
+  <div>
+    <font-awesome-icon icon="trash-alt" @click="deleteAnswer(keyToDelete)" />
+  </div>
+</template>
+
+<script>
+import { mapMutations } from "vuex";
+export default {
+  props: {
+    keyToDelete: {
+      required: true,
+      type: String
+    }
+  },
+  methods: {
+    ...mapMutations(["deleteAnswer"])
+  }
+};
+</script>
+
+<style scoped></style>

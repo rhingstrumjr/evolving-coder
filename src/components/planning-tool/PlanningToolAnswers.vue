@@ -10,6 +10,7 @@
       </span>
       {{ answers[keyToUse].answer }}
       <button @click="movePlan(keyToUse)">Plan here</button>
+      <PlanningToolDeleteAnswer :keyToDelete="keyToUse" />
     </div>
     <div v-if="showChildren">
       <PlanningToolAnswers
@@ -25,8 +26,13 @@
 
 <script>
 import { mapState, mapMutations } from "vuex";
+import PlanningToolDeleteAnswer from "./PlanningToolDeleteAnswer";
+
 export default {
   name: "PlanningToolAnswers",
+  components: {
+    PlanningToolDeleteAnswer
+  },
   props: {
     keyToUse: {
       required: true,
