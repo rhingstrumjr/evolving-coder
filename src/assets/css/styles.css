@@ -1,9 +1,16 @@
 @import "../../../node_modules/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
 
 :root {
     --ec-active-color: #44BBAC;
     --ec-bg-color: #BBAC44;
     --ec-attention-color: #ac44bb;
+    --ec-disabled-color: rgb(122, 122, 122);
+}
+
+html {
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
 }
 /* Button layout for Evolving Coder */
 
@@ -12,7 +19,7 @@ button {
     border-radius: 8px;
     border-width: 2px;
     border-color: var(--ec-bg-color);
-    background-color: #BBAC44;
+    background-color: var(--ec-bg-color);
     padding: 0 .2em;
     margin: .1em 0;
     color: rgb(230, 230, 230);
@@ -34,7 +41,7 @@ button:focus {
 }
 
 button:disabled {
-    background-color: rgba(187, 171, 68, 0.4);
+    background-color:var(--ec-disabled-color);
     cursor: default;
     color: rgb(230, 230, 230);
 }
