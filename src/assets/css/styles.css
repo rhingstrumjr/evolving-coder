@@ -1,12 +1,6 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
-
-:root {
-    --ec-active-color: #44BBAC;
-    --ec-bg-color: #BBAC44;
-    --ec-attention-color: #ac44bb;
-    --ec-disabled-color: rgb(122, 122, 122);
-}
+@import "./colors.css";
 
 html {
     font-family: 'Assistant', sans-serif;
@@ -36,7 +30,7 @@ button:active {
     background-color: #44BBAC;
 }
 
-button:focus {
+*:focus {
     outline:0;
 }
 

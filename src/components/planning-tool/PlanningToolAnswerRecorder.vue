@@ -1,13 +1,28 @@
 <template>
   <div>
-    <input id="answer" v-model="userAnswer" type="text" @keyup.enter="save" />
-    <button @click="save" :disabled="isDisabled">
+    <input
+      id="answer"
+      v-model="userAnswer"
+      type="text"
+      @keyup.enter="
+        saveAnswer(userAnswer);
+        userAnswer = '';
+      "
+    />
+    <button
+      @click="
+        saveAnswer(userAnswer);
+        userAnswer = '';
+      "
+      :disabled="isDisabled"
+    >
       Save Answer
     </button>
   </div>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
@@ -15,10 +30,7 @@ export default {
     };
   },
   methods: {
-    save() {
-      this.$emit("save-answer", this.userAnswer);
-      this.userAnswer = "";
-    }
+    ...mapMutations(["saveAnswer"])
   },
   computed: {
     isDisabled() {

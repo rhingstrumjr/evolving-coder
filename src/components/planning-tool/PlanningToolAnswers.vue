@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :style="indent">
+    <div :style="indent" :class="{ path: ancestors.includes(keyToUse) }">
       <span v-if="answers[keyToUse].children" @click="toggleChildren">
         <font-awesome-icon v-if="showChildren" icon="minus-square" />
         <font-awesome-icon v-if="!showChildren" icon="plus-square" />
@@ -17,6 +17,7 @@
         :key="child"
         :keyToUse="child"
         :depth="depth + 1"
+        :ref="child"
       />
     </div>
   </div>
@@ -47,20 +48,29 @@ export default {
       "answersToAdd",
       "parentKey",
       "rootKey",
-      "depthForQuestion"
+      "ancestors"
     ]),
     indent() {
-      return { transform: `translate(${this.depth * 50}px)` };
+      return { transform: `translate(${this.depth * 20}px)` };
     },
     iconClasses() {
       return {
         "fa-plus-square-o": !this.showChildren,
         "fa-minus-square-o": this.showChildren
       };
+    },
+    ancestors() {
+      let ancestors = [];
+      let ancestor = this.parentKey;
+      do {
+        ancestors.push(ancestor);
+        ancestor = this.answers[ancestor].parent;
+      } while (ancestor !== null);
+      return ancestors;
     }
   },
   methods: {
-    ...mapMutations(["movePlan"]),
+    ...mapMutations(["movePlan", "updateAncestors"]),
     toggleChildren() {
       this.showChildren = !this.showChildren;
     }
@@ -68,4 +78,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.path {
+  color: var(--ec-attention-color);
+  font-weight: bold;
+}
+</style>

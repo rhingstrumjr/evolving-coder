@@ -13,13 +13,23 @@ const store = new Vuex.Store({
     },
     childKey: null, // might not need
     parentKey: null,
-    rootKey: null,
-    depthForQuestion: 0
+    rootKey: null
+  },
+  getters: {
+    depth: state => {
+      if (!state.parentKey) {
+        return 0;
+      }
+      let depth = 1;
+      let currentKey = state.parentKey;
+      while (state.answers[currentKey].parent !== null) {
+        depth++;
+        currentKey = state.answers[currentKey].parent;
+      }
+      return depth;
+    }
   },
   mutations: {
-    increment(state) {
-      state.count++;
-    },
     saveAnswer(state, sentAnswer) {
       const newKey = Math.random()
         .toString(36)
@@ -35,6 +45,7 @@ const store = new Vuex.Store({
       }
       if (!state.rootKey) {
         state.rootKey = newKey;
+        state.parentKey = newKey;
       }
       Vue.set(state.answers, newKey, { ...state.answerToAdd });
     },
