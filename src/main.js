@@ -10,14 +10,15 @@ import {
   faMinusSquare,
   faPlusSquare,
   faSquare,
-  faTrashAlt
-} from "@fortawesome/free-solid-svg-icons";
+  faTrashAlt,
+  faEdit
+} from "@fortawesome/free-regular-svg-icons";
 
 Vue.config.productionTip = false;
 
 // You can add your icons directly in this plugin. See other examples for how you
 // can add other styles or just individual icons.
-library.add(faMinusSquare, faPlusSquare, faSquare, faTrashAlt);
+library.add(faMinusSquare, faPlusSquare, faSquare, faTrashAlt, faEdit);
 
 // Register the component globally
 Vue.component("font-awesome-icon", FontAwesomeIcon);

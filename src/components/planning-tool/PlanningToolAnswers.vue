@@ -7,15 +7,22 @@
         "
         @click="toggleChildren"
       >
-        <font-awesome-icon v-if="showChildren" icon="minus-square" />
-        <font-awesome-icon v-if="!showChildren" icon="plus-square" />
+        <font-awesome-icon
+          v-if="showChildren"
+          :icon="['far', 'minus-square']"
+        />
+        <font-awesome-icon
+          v-if="!showChildren"
+          :icon="['far', 'plus-square']"
+        />
       </span>
       <span v-else>
-        <font-awesome-icon icon="square" />
+        <font-awesome-icon :icon="['far', 'square']" />
       </span>
       {{ answers[keyToUse].answer }}
       <button @click="movePlan(keyToUse)">Plan here</button>
       <PlanningToolDeleteAnswer :keyToDelete="keyToUse" />
+      <font-awesome-icon :icon="['far', 'edit']" />
     </div>
     <div v-if="showChildren">
       <PlanningToolAnswers

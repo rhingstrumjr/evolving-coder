@@ -1,5 +1,8 @@
 <template>
-  <font-awesome-icon icon="trash-alt" @click="deleteAnswer(keyToDelete)" />
+  <font-awesome-icon
+    :icon="['far', 'trash-alt']"
+    @click="deleteAnswer(keyToDelete)"
+  />
 </template>
 
 <script>
