@@ -69,6 +69,10 @@ const store = new Vuex.Store({
       keysToDelete.reverse().forEach(victim => {
         Vue.delete(state.answers, victim);
       });
+    },
+    updateAnswer(state, payload) {
+      // payload has two properties: targetKey and answer
+      state.answers[payload.targetKey].answer = payload.answer;
     }
   }
 });

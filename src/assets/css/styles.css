@@ -7,6 +7,10 @@ html {
     font-family: 'Assistant', sans-serif;
     font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+}
 /* Button layout for Evolving Coder */
 
 button {

@@ -1,13 +1,19 @@
 <template>
-  <font-awesome-icon
-    :icon="['far', 'trash-alt']"
-    @click="deleteAnswer(keyToDelete)"
-  />
+  <FontAweWithTooltip
+    iconType="far"
+    iconName="trash-alt"
+    @icon-clicked="deleteAnswer(keyToDelete)"
+    >Delete answer?</FontAweWithTooltip
+  >
 </template>
 
 <script>
 import { mapMutations } from "vuex";
+import FontAweWithTooltip from "../FontAweWithTooltip";
 export default {
+  components: {
+    FontAweWithTooltip
+  },
   props: {
     keyToDelete: {
       required: true,

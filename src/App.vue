@@ -13,17 +13,4 @@ export default {
   }
 };
 </script>
-<style>
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #ac44bb;
-}
-
-#nav a.router-link-exact-active {
-  color: #44bbac;
-}
-</style>
+<style></style>

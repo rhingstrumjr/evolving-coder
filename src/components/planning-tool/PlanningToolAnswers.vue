@@ -21,8 +21,21 @@
       </span>
       {{ answers[keyToUse].answer }}
       <button @click="movePlan(keyToUse)">Plan here</button>
-      <PlanningToolDeleteAnswer :keyToDelete="keyToUse" />
-      <font-awesome-icon :icon="['far', 'edit']" />
+      <PlanningToolDeleteAnswer
+        :keyToDelete="keyToUse"
+        :style="{ 'margin-left': 0.5 + 'rem' }"
+      />
+      <FontAweWithTooltip
+        iconType="far"
+        iconName="edit"
+        @icon-clicked="toggleUpdate"
+        >Update Answer</FontAweWithTooltip
+      >
+      <PlanningToolUpdateAnswer
+        v-if="wantsUpdate"
+        :keyToUpdate="keyToUse"
+        @updated-answer="wantsUpdate = !wantsUpdate"
+      />
     </div>
     <div v-if="showChildren">
       <PlanningToolAnswers
@@ -39,11 +52,15 @@
 <script>
 import { mapState, mapMutations } from "vuex";
 import PlanningToolDeleteAnswer from "./PlanningToolDeleteAnswer";
+import PlanningToolUpdateAnswer from "./PlanningToolUpdateAnswer";
+import FontAweWithTooltip from "../FontAweWithTooltip";
 
 export default {
   name: "PlanningToolAnswers",
   components: {
-    PlanningToolDeleteAnswer
+    PlanningToolDeleteAnswer,
+    PlanningToolUpdateAnswer,
+    FontAweWithTooltip
   },
   props: {
     keyToUse: {
@@ -57,7 +74,8 @@ export default {
   },
   data() {
     return {
-      showChildren: true
+      showChildren: true,
+      wantsUpdate: false
     };
   },
   computed: {
@@ -91,6 +109,9 @@ export default {
     ...mapMutations(["movePlan", "updateAncestors"]),
     toggleChildren() {
       this.showChildren = !this.showChildren;
+    },
+    toggleUpdate() {
+      this.wantsUpdate = !this.wantsUpdate;
     }
   }
 };
