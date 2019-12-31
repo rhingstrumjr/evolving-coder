@@ -26,10 +26,11 @@
         :style="{ 'margin-left': 0.5 + 'rem' }"
       />
       <FontAweWithTooltip
+        v-if="!wantsUpdate"
         iconType="far"
         iconName="edit"
         @icon-clicked="toggleUpdate"
-        >Update Answer</FontAweWithTooltip
+        >Update Answer?</FontAweWithTooltip
       >
       <PlanningToolUpdateAnswer
         v-if="wantsUpdate"
@@ -43,7 +44,6 @@
         :key="child"
         :keyToUse="child"
         :depth="depth + 1"
-        :ref="child"
       />
     </div>
   </div>
@@ -96,12 +96,12 @@ export default {
       };
     },
     ancestors() {
-      let ancestors = [];
-      let ancestor = this.parentKey;
-      do {
+      let ancestors = [this.parentKey];
+      let ancestor = this.answers[this.parentKey].parent;
+      while (ancestor !== null) {
         ancestors.push(ancestor);
         ancestor = this.answers[ancestor].parent;
-      } while (ancestor !== null);
+      }
       return ancestors;
     }
   },

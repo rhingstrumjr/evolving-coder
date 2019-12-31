@@ -52,4 +52,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+div {
+  color: var(--ec-active-color);
+  font-weight: bold;
+}
+</style>

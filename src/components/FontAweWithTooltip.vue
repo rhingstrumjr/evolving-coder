@@ -43,19 +43,22 @@ div {
   background-color: var(--ec-bg-color);
   color: #fff;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.075rem;
   border-radius: 6px;
-  width: 8rem;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -4rem;
+  width: 3rem;
+  bottom: 150%;
+  left: 17%;
+  margin-left: -1rem;
+  font-size: 0.25rem;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+  transition: all 0.2s ease-in-out;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  transform: scale(2.5);
 }
 
 .tooltiptext {
