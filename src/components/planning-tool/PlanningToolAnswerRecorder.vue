@@ -1,17 +1,18 @@
 <template>
   <div>
+    <PlanningToolQuestions />
     <input
-      id="answer"
+      :id="parentID || 'root'"
       v-model="userAnswer"
       type="text"
       @keyup.enter="
-        saveAnswer(userAnswer);
+        saveAnswer({ userAnswer, parentID });
         userAnswer = '';
       "
     />
     <button
       @click="
-        saveAnswer(userAnswer);
+        saveAnswer({ userAnswer, parentID });
         userAnswer = '';
       "
       :disabled="isDisabled"
@@ -23,7 +24,16 @@
 
 <script>
 import { mapMutations } from "vuex";
+import PlanningToolQuestions from "./PlanningToolQuestions";
 export default {
+  components: {
+    PlanningToolQuestions
+  },
+  props: {
+    parentID: {
+      required: true
+    }
+  },
   data() {
     return {
       userAnswer: ""
@@ -35,6 +45,11 @@ export default {
   computed: {
     isDisabled() {
       return !this.userAnswer.length > 0;
+    }
+  },
+  mounted() {
+    if (this.parentID) {
+      document.getElementById(this.parentID).focus();
     }
   }
 };

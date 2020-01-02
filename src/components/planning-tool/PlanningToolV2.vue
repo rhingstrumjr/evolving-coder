@@ -1,9 +1,13 @@
 <template>
   <div>
-    <PlanningToolQuestions />
-    <PlanningToolAnswerRecorder @save-answer="saveAnswer" />
+    <PlanningToolPlannedProjects />
+    <PlanningToolAnswerRecorder
+      v-if="!rootKey"
+      :parentID="rootKey"
+      @save-answer="saveAnswer"
+    />
     <div v-if="rootKey">
-      <PlanningToolAnswers :keyToUse="rootKey" :depth="0" />
+      <PlanningToolAnswers :keyToUse="rootKey" :depth="0" :ref="rootKey" />
     </div>
   </div>
 </template>
@@ -13,13 +17,13 @@ import { mapState, mapMutations } from "vuex";
 
 import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder";
 import PlanningToolAnswers from "./PlanningToolAnswers";
-import PlanningToolQuestions from "./PlanningToolQuestions";
+import PlanningToolPlannedProjects from "./PlanningToolPlannedProjects";
 
 export default {
   components: {
     PlanningToolAnswerRecorder,
     PlanningToolAnswers,
-    PlanningToolQuestions
+    PlanningToolPlannedProjects
   },
   data() {
     return {};

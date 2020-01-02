@@ -2,11 +2,10 @@
   <div>
     <h3 v-if="depth === 0">What do you want to create?</h3>
     <h3 v-else-if="depth % 2 === 1">
-      What qualities does the {{ answers[parentKey].answer }} need?
+      What qualities or features must it have?
     </h3>
     <h3 v-else>
-      What supports are needed to ensure this quality:
-      {{ answers[parentKey].answer }}?
+      What is needed to ensure this?
     </h3>
   </div>
 </template>
@@ -21,4 +20,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h3 {
+  color: var(--ec-active-color);
+  margin: 0.1rem 0;
+  font-weight: normal;
+}
+</style>

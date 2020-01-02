@@ -1,6 +1,11 @@
 <template>
   <div>
-    <div :style="indent" :class="{ path: ancestors.includes(keyToUse) }">
+    <div
+      :ref="keyToUse"
+      :style="indent"
+      :class="{ path: ancestors.includes(keyToUse) }"
+      class="planning-tool-item"
+    >
       <span
         v-if="
           answers[keyToUse].children && answers[keyToUse].children.length > 0
@@ -20,7 +25,12 @@
         <font-awesome-icon :icon="['far', 'square']" />
       </span>
       {{ answers[keyToUse].answer }}
-      <button @click="movePlan(keyToUse)">Plan here</button>
+      <FontAweWithTooltip
+        iconType="far"
+        iconName="arrow-alt-circle-down"
+        @icon-clicked="movePlan(keyToUse)"
+        >Plan Here</FontAweWithTooltip
+      >
       <PlanningToolDeleteAnswer
         :keyToDelete="keyToUse"
         :style="{ 'margin-left': 0.5 + 'rem' }"
@@ -36,6 +46,10 @@
         v-if="wantsUpdate"
         :keyToUpdate="keyToUse"
         @updated-answer="wantsUpdate = !wantsUpdate"
+      />
+      <PlanningToolAnswerRecorder
+        v-if="keyToUse === parentKey"
+        :parentID="keyToUse"
       />
     </div>
     <div v-if="showChildren">
@@ -53,6 +67,7 @@
 import { mapState, mapMutations } from "vuex";
 import PlanningToolDeleteAnswer from "./PlanningToolDeleteAnswer";
 import PlanningToolUpdateAnswer from "./PlanningToolUpdateAnswer";
+import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder";
 import FontAweWithTooltip from "../FontAweWithTooltip";
 
 export default {
@@ -60,7 +75,8 @@ export default {
   components: {
     PlanningToolDeleteAnswer,
     PlanningToolUpdateAnswer,
-    FontAweWithTooltip
+    FontAweWithTooltip,
+    PlanningToolAnswerRecorder
   },
   props: {
     keyToUse: {
@@ -121,5 +137,8 @@ export default {
 .path {
   color: var(--ec-attention-color);
   font-weight: bold;
+}
+.planning-tool-item {
+  margin-bottom: 0.3rem;
 }
 </style>

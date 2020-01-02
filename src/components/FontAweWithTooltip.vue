@@ -31,6 +31,10 @@ div {
   display: inline-block;
 }
 
+div:hover {
+  color: var(--ec-active-color);
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -40,11 +44,14 @@ div {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  background-color: var(--ec-bg-color);
-  color: #fff;
+  background-color: white;
+  color: var(--ec-active-color);
   text-align: center;
   padding: 0.075rem;
-  border-radius: 6px;
+  border-radius: 1px;
+  border-color: var(--ec-active-color);
+  border-style: solid;
+  border-width: 1px;
   width: 3rem;
   bottom: 150%;
   left: 17%;

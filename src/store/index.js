@@ -30,17 +30,17 @@ const store = new Vuex.Store({
     }
   },
   mutations: {
-    saveAnswer(state, sentAnswer) {
+    saveAnswer(state, payload) {
       const newKey = Math.random()
         .toString(36)
         .substr(2, 9);
-      state.answerToAdd.answer = sentAnswer;
-      if (state.parentKey) {
-        state.answerToAdd.parent = state.parentKey;
-        if (Array.isArray(state.answers[state.parentKey].children)) {
-          state.answers[state.parentKey].children.push(newKey);
+      state.answerToAdd.answer = payload.userAnswer;
+      if (state.answers[payload.parentID]) {
+        state.answerToAdd.parent = payload.parentID;
+        if (Array.isArray(state.answers[payload.parentID].children)) {
+          state.answers[payload.parentID].children.push(newKey);
         } else {
-          state.answers[state.parentKey].children = [newKey];
+          state.answers[payload.parentID].children = [newKey];
         }
       }
       if (!state.rootKey) {
@@ -73,6 +73,19 @@ const store = new Vuex.Store({
     updateAnswer(state, payload) {
       // payload has two properties: targetKey and answer
       state.answers[payload.targetKey].answer = payload.answer;
+    },
+    loadAnswers(state, plannedProject) {
+      console.log(plannedProject);
+      const obj = plannedProject;
+      for (const key in obj) {
+        console.log(key);
+        if (obj[key].parent === null) {
+          state.rootKey = key;
+          state.parentKey = key;
+          break;
+        }
+      }
+      state.answers = plannedProject;
     }
   }
 });

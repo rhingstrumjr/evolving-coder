@@ -1,0 +1,342 @@
+{
+    "m4f8egfot": {
+        "answer": "App",
+        "parent": null,
+        "children": [
+            "60qsgrkzu",
+            "urge315to",
+            "nbvtqzeuu",
+            "o27zy3slz"
+        ]
+    },
+    "60qsgrkzu": {
+        "answer": "help people work on coding projects",
+        "parent": "m4f8egfot",
+        "children": [
+            "gzzu9hm48",
+            "fkziradoz",
+            "5r9rmg13z"
+        ]
+    },
+    "urge315to": {
+        "answer": "let people post wanted projects",
+        "parent": "m4f8egfot",
+        "children": [
+            "4r6be4xkh"
+        ]
+    },
+    "nbvtqzeuu": {
+        "answer": "payment processing",
+        "parent": "m4f8egfot",
+        "children": null
+    },
+    "o27zy3slz": {
+        "answer": "provide tips for working together",
+        "parent": "m4f8egfot",
+        "children": [
+            "ita2stihq",
+            "1ftc31otf"
+        ]
+    },
+    "gzzu9hm48": {
+        "answer": "projects to work on",
+        "parent": "60qsgrkzu",
+        "children": [
+            "b0esc6i0c",
+            "cwj7g9p2z",
+            "f45pb71n7",
+            "3jxzupw14"
+        ]
+    },
+    "fkziradoz": {
+        "answer": "users",
+        "parent": "60qsgrkzu",
+        "children": [
+            "vjpz8vkh4",
+            "00bomq2i2",
+            "1j9056ml8",
+            "76hzwgxyb"
+        ]
+    },
+    "5r9rmg13z": {
+        "answer": "communication with teammates",
+        "parent": "60qsgrkzu",
+        "children": [
+            "s085p9mk7",
+            "u173fz60c"
+        ]
+    },
+    "vjpz8vkh4": {
+        "answer": "name",
+        "parent": "fkziradoz",
+        "children": null
+    },
+    "00bomq2i2": {
+        "answer": "Github link",
+        "parent": "fkziradoz",
+        "children": null
+    },
+    "1j9056ml8": {
+        "answer": "location",
+        "parent": "fkziradoz",
+        "children": null
+    },
+    "76hzwgxyb": {
+        "answer": "areas of specialty",
+        "parent": "fkziradoz",
+        "children": null
+    },
+    "b0esc6i0c": {
+        "answer": "description of project",
+        "parent": "gzzu9hm48",
+        "children": null
+    },
+    "cwj7g9p2z": {
+        "answer": "teammates",
+        "parent": "gzzu9hm48",
+        "children": [
+            "u2uc425bi"
+        ]
+    },
+    "f45pb71n7": {
+        "answer": "to-do list for project",
+        "parent": "gzzu9hm48",
+        "children": [
+            "qm79cak0w",
+            "m7k67cjof"
+        ]
+    },
+    "qm79cak0w": {
+        "answer": "programming areas",
+        "parent": "f45pb71n7",
+        "children": [
+            "hvnls5dvf",
+            "ov8cvj4w6"
+        ]
+    },
+    "hvnls5dvf": {
+        "answer": "frontend",
+        "parent": "qm79cak0w",
+        "children": null
+    },
+    "ov8cvj4w6": {
+        "answer": "backend",
+        "parent": "qm79cak0w",
+        "children": null
+    },
+    "m7k67cjof": {
+        "answer": "tasks",
+        "parent": "f45pb71n7",
+        "children": [
+            "8omisbv2o",
+            "m04bieqwm"
+        ]
+    },
+    "8omisbv2o": {
+        "answer": "added by teammates",
+        "parent": "m7k67cjof",
+        "children": null
+    },
+    "m04bieqwm": {
+        "answer": "voted on importance",
+        "parent": "m7k67cjof",
+        "children": null
+    },
+    "u2uc425bi": {
+        "answer": "team size",
+        "parent": "cwj7g9p2z",
+        "children": [
+            "weltlk0ij"
+        ]
+    },
+    "weltlk0ij": {
+        "answer": "start with 4 people",
+        "parent": "u2uc425bi",
+        "children": null
+    },
+    "3jxzupw14": {
+        "answer": "tech-stack used",
+        "parent": "gzzu9hm48",
+        "children": [
+            "y37ngmkvy"
+        ]
+    },
+    "y37ngmkvy": {
+        "answer": "lists of various languages/frameworks",
+        "parent": "3jxzupw14",
+        "children": [
+            "wfkrw2xr0",
+            "rkutuky53",
+            "ca5dgz71z"
+        ]
+    },
+    "wfkrw2xr0": {
+        "answer": "backend lists",
+        "parent": "y37ngmkvy",
+        "children": [
+            "bavgmn42k",
+            "wspb5y4am",
+            "1sg81ssjt",
+            "7ef6vtbb1"
+        ]
+    },
+    "rkutuky53": {
+        "answer": "frontend lists",
+        "parent": "y37ngmkvy",
+        "children": [
+            "z0n5vafct",
+            "san6dtvft",
+            "9wxt8o9bd"
+        ]
+    },
+    "bavgmn42k": {
+        "answer": "node.js",
+        "parent": "wfkrw2xr0",
+        "children": null
+    },
+    "wspb5y4am": {
+        "answer": "python",
+        "parent": "wfkrw2xr0",
+        "children": [
+            "8knw34i7k",
+            "0ln5eecqt"
+        ]
+    },
+    "8knw34i7k": {
+        "answer": "flask",
+        "parent": "wspb5y4am",
+        "children": null
+    },
+    "0ln5eecqt": {
+        "answer": "django",
+        "parent": "wspb5y4am",
+        "children": null
+    },
+    "1sg81ssjt": {
+        "answer": "java",
+        "parent": "wfkrw2xr0",
+        "children": null
+    },
+    "7ef6vtbb1": {
+        "answer": "kotlin",
+        "parent": "wfkrw2xr0",
+        "children": null
+    },
+    "z0n5vafct": {
+        "answer": "Vue",
+        "parent": "rkutuky53",
+        "children": null
+    },
+    "san6dtvft": {
+        "answer": "React",
+        "parent": "rkutuky53",
+        "children": null
+    },
+    "9wxt8o9bd": {
+        "answer": "Vanilla Javascript",
+        "parent": "rkutuky53",
+        "children": null
+    },
+    "ca5dgz71z": {
+        "answer": "CSS",
+        "parent": "y37ngmkvy",
+        "children": [
+            "jzbxe3svg",
+            "ahicxkkbc",
+            "6se8mpxq8"
+        ]
+    },
+    "jzbxe3svg": {
+        "answer": "SASS",
+        "parent": "ca5dgz71z",
+        "children": null
+    },
+    "ahicxkkbc": {
+        "answer": "SCSS",
+        "parent": "ca5dgz71z",
+        "children": null
+    },
+    "6se8mpxq8": {
+        "answer": "CSS3",
+        "parent": "ca5dgz71z",
+        "children": null
+    },
+    "s085p9mk7": {
+        "answer": "Whole team",
+        "parent": "5r9rmg13z",
+        "children": [
+            "2osx3nhlg"
+        ]
+    },
+    "u173fz60c": {
+        "answer": "Individual",
+        "parent": "5r9rmg13z",
+        "children": null
+    },
+    "2osx3nhlg": {
+        "answer": "Forum",
+        "parent": "s085p9mk7",
+        "children": null
+    },
+    "4r6be4xkh": {
+        "answer": "creation of project panel",
+        "parent": "urge315to",
+        "children": [
+            "69sqh975v",
+            "oz9ff9v0d",
+            "7l9tkywn4"
+        ]
+    },
+    "69sqh975v": {
+        "answer": "Description of the project",
+        "parent": "4r6be4xkh",
+        "children": null
+    },
+    "oz9ff9v0d": {
+        "answer": "visual of the project",
+        "parent": "4r6be4xkh",
+        "children": null
+    },
+    "7l9tkywn4": {
+        "answer": "price offered",
+        "parent": "4r6be4xkh",
+        "children": null
+    },
+    "ita2stihq": {
+        "answer": "articles",
+        "parent": "o27zy3slz",
+        "children": [
+            "k7bpr39kh",
+            "q3yh0clwz"
+        ]
+    },
+    "1ftc31otf": {
+        "answer": "Reference documents",
+        "parent": "o27zy3slz",
+        "children": [
+            "exuogmlaa"
+        ]
+    },
+    "k7bpr39kh": {
+        "answer": "teamwork-based",
+        "parent": "ita2stihq",
+        "children": null
+    },
+    "q3yh0clwz": {
+        "answer": "programming-based",
+        "parent": "ita2stihq",
+        "children": null
+    },
+    "exuogmlaa": {
+        "answer": "project skeletons",
+        "parent": "1ftc31otf",
+        "children": [
+            "ktsm4r75d"
+        ]
+    },
+    "ktsm4r75d": {
+        "answer": "skeletons are on Github",
+        "parent": "exuogmlaa",
+        "children": null
+    }
+}

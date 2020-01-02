@@ -1,7 +1,7 @@
 .ec-grid-hcf {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: 60px 5fr 2fr;
     grid-template-areas: 
         "header header header"
         "leftSidebar content rightSidebar"
