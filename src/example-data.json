@@ -35,7 +35,8 @@
         "parent": "m4f8egfot",
         "children": [
             "ita2stihq",
-            "1ftc31otf"
+            "1ftc31otf",
+            "z8ovfb3wh"
         ]
     },
     "gzzu9hm48": {
@@ -150,9 +151,12 @@
         ]
     },
     "weltlk0ij": {
-        "answer": "start with 4 people",
+        "answer": "4 people max",
         "parent": "u2uc425bi",
-        "children": null
+        "children": [
+            "27x3a74m0",
+            "9dccl3wsv"
+        ]
     },
     "3jxzupw14": {
         "answer": "tech-stack used",
@@ -337,6 +341,21 @@
     "ktsm4r75d": {
         "answer": "skeletons are on Github",
         "parent": "exuogmlaa",
+        "children": null
+    },
+    "27x3a74m0": {
+        "answer": "team roster",
+        "parent": "weltlk0ij",
+        "children": null
+    },
+    "9dccl3wsv": {
+        "answer": "Users",
+        "parent": "weltlk0ij",
+        "children": null
+    },
+    "z8ovfb3wh": {
+        "answer": "Hints at various locations around the app",
+        "parent": "o27zy3slz",
         "children": null
     }
 }
