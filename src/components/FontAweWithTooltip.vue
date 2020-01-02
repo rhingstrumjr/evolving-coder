@@ -52,7 +52,7 @@ div:hover {
   border-color: var(--ec-active-color);
   border-style: solid;
   border-width: 1px;
-  width: 3rem;
+  white-space: nowrap;
   bottom: 150%;
   left: 17%;
   margin-left: -1rem;
