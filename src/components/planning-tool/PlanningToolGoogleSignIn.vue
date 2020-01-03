@@ -27,7 +27,6 @@ export default {
           this.user = result.user.displayName;
           this.userID = result.user.uid;
         })
-        .catch(e => {});
     }
   }
 };
