@@ -7,7 +7,7 @@
       @save-answer="saveAnswer"
     />
     <div v-if="rootKey">
-      <PlanningToolAnswers :keyToUse="rootKey" :depth="0" :ref="rootKey" />
+      <PlanningToolAnswers :keyToUse="rootKey" :depth="0" />
     </div>
   </div>
 </template>
@@ -29,13 +29,7 @@ export default {
     return {};
   },
   computed: {
-    ...mapState([
-      "answers",
-      "answersToAdd",
-      "parentKey",
-      "rootKey",
-      "depthForQuestion"
-    ])
+    ...mapState(["answers", "parentKey", "rootKey"])
   },
   methods: {
     ...mapMutations(["saveAnswer"]),
