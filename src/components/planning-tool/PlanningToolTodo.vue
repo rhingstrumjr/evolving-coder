@@ -2,28 +2,25 @@
 will fall into 2 categories: // 1. Actionable - can be done immediately // 2.
 Dependent - must be done after another task
 
-<template> </template>
-
-<script>
-export default {};
-</script>
-
-<style></style>
-
 <template>
-  1.
+  <div>
+    Todo list
+    <ul>
+      <li v-for="[key, entry] of Object.entries(answers)" :key="key">
+        {{ entry.answer }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-export default {};
-</script>
+import { mapState } from "vuex";
 
-<style></style>
-
-<template> </template>
-
-<script>
-export default {};
+export default {
+  computed: {
+    ...mapState(["answers"])
+  }
+};
 </script>
 
 <style scoped></style>

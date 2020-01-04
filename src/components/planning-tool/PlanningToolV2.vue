@@ -8,6 +8,7 @@
     />
     <div v-if="rootKey">
       <PlanningToolAnswers :keyToUse="rootKey" :depth="0" />
+      <PlanningToolTodo />
     </div>
   </div>
 </template>
@@ -18,12 +19,14 @@ import { mapState, mapMutations } from "vuex";
 import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder";
 import PlanningToolAnswers from "./PlanningToolAnswers";
 import PlanningToolPlannedProjects from "./PlanningToolPlannedProjects";
+import PlanningToolTodo from "./PlanningToolTodo";
 
 export default {
   components: {
     PlanningToolAnswerRecorder,
     PlanningToolAnswers,
-    PlanningToolPlannedProjects
+    PlanningToolPlannedProjects,
+    PlanningToolTodo
   },
   data() {
     return {};

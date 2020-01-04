@@ -9,7 +9,11 @@ const store = new Vuex.Store({
     answerToAdd: {
       answer: "",
       parent: null,
-      children: null
+      children: null,
+      completed: false,
+      todoType: null,
+      notes: null,
+      dependentOn: [] // can find using depth
     },
     childKey: null, // might not need
     parentKey: null,
