@@ -1,11 +1,7 @@
 <template>
   <div>
     <PlanningToolPlannedProjects />
-    <PlanningToolAnswerRecorder
-      v-if="!rootKey"
-      :parentID="rootKey"
-      @save-answer="saveAnswer"
-    />
+    <PlanningToolAnswerRecorder v-if="!rootKey" :parentID="rootKey" />
     <div v-if="rootKey">
       <PlanningToolAnswers :keyToUse="rootKey" :depth="0" />
       <PlanningToolTodo />
@@ -14,7 +10,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
+import { mapState } from "vuex";
 
 import PlanningToolAnswerRecorder from "./PlanningToolAnswerRecorder";
 import PlanningToolAnswers from "./PlanningToolAnswers";
@@ -35,7 +31,6 @@ export default {
     ...mapState(["answers", "parentKey", "rootKey"])
   },
   methods: {
-    ...mapMutations(["saveAnswer"]),
     movePlan(parentKey, depth) {
       this.parentKey = parentKey;
       this.depthForQuestion = depth + 1;

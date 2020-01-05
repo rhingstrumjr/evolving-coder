@@ -1,361 +1,605 @@
 {
-    "m4f8egfot": {
+    "z6lo5lvt0": {
         "answer": "App",
         "parent": null,
         "children": [
-            "60qsgrkzu",
-            "urge315to",
-            "nbvtqzeuu",
-            "o27zy3slz"
+            "keb2vm2xq",
+            "ya1cjp2ng",
+            "hmrmhcxit",
+            "zl0jsbmub"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "bhv0r8vgg",
+            "jbgt8ww4h",
+            "v1sc0oiug",
+            "stg8z6obj",
+            "u8559nqqz",
+            "sl6l93qhk",
+            "dy9iy9wxj"
         ]
     },
-    "60qsgrkzu": {
+    "keb2vm2xq": {
         "answer": "help people work on coding projects",
-        "parent": "m4f8egfot",
+        "parent": "z6lo5lvt0",
         "children": [
-            "gzzu9hm48",
-            "fkziradoz",
-            "5r9rmg13z"
-        ]
+            "dy9iy9wxj",
+            "sl6l93qhk",
+            "u8559nqqz"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "urge315to": {
+    "ya1cjp2ng": {
         "answer": "let people post wanted projects",
-        "parent": "m4f8egfot",
+        "parent": "z6lo5lvt0",
         "children": [
-            "4r6be4xkh"
-        ]
+            "stg8z6obj"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "nbvtqzeuu": {
-        "answer": "payment processing",
-        "parent": "m4f8egfot",
-        "children": null
+    "hmrmhcxit": {
+        "answer": "payment processessing",
+        "parent": "z6lo5lvt0",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "o27zy3slz": {
+    "zl0jsbmub": {
         "answer": "provide tips for working together",
-        "parent": "m4f8egfot",
+        "parent": "z6lo5lvt0",
         "children": [
-            "ita2stihq",
-            "1ftc31otf",
-            "z8ovfb3wh"
-        ]
+            "v1sc0oiug",
+            "jbgt8ww4h",
+            "bhv0r8vgg"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "gzzu9hm48": {
+    "dy9iy9wxj": {
         "answer": "projects to work on",
-        "parent": "60qsgrkzu",
+        "parent": "keb2vm2xq",
         "children": [
-            "b0esc6i0c",
-            "cwj7g9p2z",
-            "f45pb71n7",
-            "3jxzupw14"
+            "j2r5kgz9s",
+            "3ipkh0az3",
+            "2ebs3klcw",
+            "7rt9nrgtb"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "5fe0ox5ro",
+            "rltu1hit5",
+            "9llnr5yzq",
+            "wdem228vt"
         ]
     },
-    "fkziradoz": {
+    "sl6l93qhk": {
         "answer": "users",
-        "parent": "60qsgrkzu",
+        "parent": "keb2vm2xq",
         "children": [
-            "vjpz8vkh4",
-            "00bomq2i2",
-            "1j9056ml8",
-            "76hzwgxyb"
-        ]
+            "xxeiuxpdi",
+            "h87n5ydwa",
+            "0456rl074",
+            "stqhfhtpn"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "5r9rmg13z": {
+    "u8559nqqz": {
         "answer": "communication with teammates",
-        "parent": "60qsgrkzu",
+        "parent": "keb2vm2xq",
         "children": [
-            "s085p9mk7",
-            "u173fz60c"
+            "92p11samr",
+            "7i1xhmntz"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "hv01wgxv8"
         ]
     },
-    "vjpz8vkh4": {
-        "answer": "name",
-        "parent": "fkziradoz",
-        "children": null
-    },
-    "00bomq2i2": {
-        "answer": "Github link",
-        "parent": "fkziradoz",
-        "children": null
-    },
-    "1j9056ml8": {
-        "answer": "location",
-        "parent": "fkziradoz",
-        "children": null
-    },
-    "76hzwgxyb": {
-        "answer": "areas of specialty",
-        "parent": "fkziradoz",
-        "children": null
-    },
-    "b0esc6i0c": {
+    "j2r5kgz9s": {
         "answer": "description of project",
-        "parent": "gzzu9hm48",
-        "children": null
+        "parent": "dy9iy9wxj",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "cwj7g9p2z": {
+    "3ipkh0az3": {
         "answer": "teammates",
-        "parent": "gzzu9hm48",
+        "parent": "dy9iy9wxj",
         "children": [
-            "u2uc425bi"
-        ]
+            "wdem228vt"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "f45pb71n7": {
-        "answer": "to-do list for project",
-        "parent": "gzzu9hm48",
+    "2ebs3klcw": {
+        "answer": "todo list for project",
+        "parent": "dy9iy9wxj",
         "children": [
-            "qm79cak0w",
-            "m7k67cjof"
-        ]
+            "9llnr5yzq",
+            "rltu1hit5"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "qm79cak0w": {
-        "answer": "programming areas",
-        "parent": "f45pb71n7",
-        "children": [
-            "hvnls5dvf",
-            "ov8cvj4w6"
-        ]
-    },
-    "hvnls5dvf": {
-        "answer": "frontend",
-        "parent": "qm79cak0w",
-        "children": null
-    },
-    "ov8cvj4w6": {
-        "answer": "backend",
-        "parent": "qm79cak0w",
-        "children": null
-    },
-    "m7k67cjof": {
-        "answer": "tasks",
-        "parent": "f45pb71n7",
-        "children": [
-            "8omisbv2o",
-            "m04bieqwm"
-        ]
-    },
-    "8omisbv2o": {
-        "answer": "added by teammates",
-        "parent": "m7k67cjof",
-        "children": null
-    },
-    "m04bieqwm": {
-        "answer": "voted on importance",
-        "parent": "m7k67cjof",
-        "children": null
-    },
-    "u2uc425bi": {
-        "answer": "team size",
-        "parent": "cwj7g9p2z",
-        "children": [
-            "weltlk0ij"
-        ]
-    },
-    "weltlk0ij": {
-        "answer": "4 people max",
-        "parent": "u2uc425bi",
-        "children": [
-            "27x3a74m0",
-            "9dccl3wsv"
-        ]
-    },
-    "3jxzupw14": {
+    "7rt9nrgtb": {
         "answer": "tech-stack used",
-        "parent": "gzzu9hm48",
+        "parent": "dy9iy9wxj",
         "children": [
-            "y37ngmkvy"
+            "5fe0ox5ro"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "wdem228vt": {
+        "answer": "team size",
+        "parent": "3ipkh0az3",
+        "children": [
+            "jmx0sig5s"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "61xp7vach"
         ]
     },
-    "y37ngmkvy": {
-        "answer": "lists of various languages/frameworks",
-        "parent": "3jxzupw14",
+    "jmx0sig5s": {
+        "answer": "4 people max",
+        "parent": "wdem228vt",
         "children": [
-            "wfkrw2xr0",
-            "rkutuky53",
-            "ca5dgz71z"
-        ]
+            "61xp7vach"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "wfkrw2xr0": {
-        "answer": "backend lists",
-        "parent": "y37ngmkvy",
-        "children": [
-            "bavgmn42k",
-            "wspb5y4am",
-            "1sg81ssjt",
-            "7ef6vtbb1"
-        ]
-    },
-    "rkutuky53": {
-        "answer": "frontend lists",
-        "parent": "y37ngmkvy",
-        "children": [
-            "z0n5vafct",
-            "san6dtvft",
-            "9wxt8o9bd"
-        ]
-    },
-    "bavgmn42k": {
-        "answer": "node.js",
-        "parent": "wfkrw2xr0",
-        "children": null
-    },
-    "wspb5y4am": {
-        "answer": "python",
-        "parent": "wfkrw2xr0",
-        "children": [
-            "8knw34i7k",
-            "0ln5eecqt"
-        ]
-    },
-    "8knw34i7k": {
-        "answer": "flask",
-        "parent": "wspb5y4am",
-        "children": null
-    },
-    "0ln5eecqt": {
-        "answer": "django",
-        "parent": "wspb5y4am",
-        "children": null
-    },
-    "1sg81ssjt": {
-        "answer": "java",
-        "parent": "wfkrw2xr0",
-        "children": null
-    },
-    "7ef6vtbb1": {
-        "answer": "kotlin",
-        "parent": "wfkrw2xr0",
-        "children": null
-    },
-    "z0n5vafct": {
-        "answer": "Vue",
-        "parent": "rkutuky53",
-        "children": null
-    },
-    "san6dtvft": {
-        "answer": "React",
-        "parent": "rkutuky53",
-        "children": null
-    },
-    "9wxt8o9bd": {
-        "answer": "Vanilla Javascript",
-        "parent": "rkutuky53",
-        "children": null
-    },
-    "ca5dgz71z": {
-        "answer": "CSS",
-        "parent": "y37ngmkvy",
-        "children": [
-            "jzbxe3svg",
-            "ahicxkkbc",
-            "6se8mpxq8"
-        ]
-    },
-    "jzbxe3svg": {
-        "answer": "SASS",
-        "parent": "ca5dgz71z",
-        "children": null
-    },
-    "ahicxkkbc": {
-        "answer": "SCSS",
-        "parent": "ca5dgz71z",
-        "children": null
-    },
-    "6se8mpxq8": {
-        "answer": "CSS3",
-        "parent": "ca5dgz71z",
-        "children": null
-    },
-    "s085p9mk7": {
-        "answer": "Whole team",
-        "parent": "5r9rmg13z",
-        "children": [
-            "2osx3nhlg"
-        ]
-    },
-    "u173fz60c": {
-        "answer": "Individual",
-        "parent": "5r9rmg13z",
-        "children": null
-    },
-    "2osx3nhlg": {
-        "answer": "Forum",
-        "parent": "s085p9mk7",
-        "children": null
-    },
-    "4r6be4xkh": {
-        "answer": "creation of project panel",
-        "parent": "urge315to",
-        "children": [
-            "69sqh975v",
-            "oz9ff9v0d",
-            "7l9tkywn4"
-        ]
-    },
-    "69sqh975v": {
-        "answer": "Description of the project",
-        "parent": "4r6be4xkh",
-        "children": null
-    },
-    "oz9ff9v0d": {
-        "answer": "visual of the project",
-        "parent": "4r6be4xkh",
-        "children": null
-    },
-    "7l9tkywn4": {
-        "answer": "price offered",
-        "parent": "4r6be4xkh",
-        "children": null
-    },
-    "ita2stihq": {
-        "answer": "articles",
-        "parent": "o27zy3slz",
-        "children": [
-            "k7bpr39kh",
-            "q3yh0clwz"
-        ]
-    },
-    "1ftc31otf": {
-        "answer": "Reference documents",
-        "parent": "o27zy3slz",
-        "children": [
-            "exuogmlaa"
-        ]
-    },
-    "k7bpr39kh": {
-        "answer": "teamwork-based",
-        "parent": "ita2stihq",
-        "children": null
-    },
-    "q3yh0clwz": {
-        "answer": "programming-based",
-        "parent": "ita2stihq",
-        "children": null
-    },
-    "exuogmlaa": {
-        "answer": "project skeletons",
-        "parent": "1ftc31otf",
-        "children": [
-            "ktsm4r75d"
-        ]
-    },
-    "ktsm4r75d": {
-        "answer": "skeletons are on Github",
-        "parent": "exuogmlaa",
-        "children": null
-    },
-    "27x3a74m0": {
+    "61xp7vach": {
         "answer": "team roster",
-        "parent": "weltlk0ij",
-        "children": null
+        "parent": "jmx0sig5s",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "9dccl3wsv": {
-        "answer": "Users",
-        "parent": "weltlk0ij",
-        "children": null
+    "9llnr5yzq": {
+        "answer": "programming areas",
+        "parent": "2ebs3klcw",
+        "children": [
+            "vkzb8dmb3",
+            "lp2b1vy96"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     },
-    "z8ovfb3wh": {
-        "answer": "Hints at various locations around the app",
-        "parent": "o27zy3slz",
-        "children": null
+    "rltu1hit5": {
+        "answer": "tasks",
+        "parent": "2ebs3klcw",
+        "children": [
+            "j7yjg291k",
+            "r14ney81r"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "vkzb8dmb3": {
+        "answer": "frontend",
+        "parent": "9llnr5yzq",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "lp2b1vy96": {
+        "answer": "backend",
+        "parent": "9llnr5yzq",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "j7yjg291k": {
+        "answer": "added by teammates",
+        "parent": "rltu1hit5",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "r14ney81r": {
+        "answer": "voted on importance",
+        "parent": "rltu1hit5",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "5fe0ox5ro": {
+        "answer": "lists of various languages/frameworks",
+        "parent": "7rt9nrgtb",
+        "children": [
+            "b14ofeqav",
+            "jnp7l8dre",
+            "lfefvqfyf"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "dngmoz0in",
+            "xnsy7y2i0",
+            "0e6vfpdmg",
+            "xf7rrpz66",
+            "yo4dc7hgf",
+            "vvy1x5nja",
+            "ropi6ujax",
+            "tid3n8bh9",
+            "oeksrnal0",
+            "9edg8rea1"
+        ]
+    },
+    "b14ofeqav": {
+        "answer": "backend lists",
+        "parent": "5fe0ox5ro",
+        "children": [
+            "9edg8rea1",
+            "oeksrnal0",
+            "tid3n8bh9",
+            "ropi6ujax"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "9edg8rea1": {
+        "answer": "node.js",
+        "parent": "b14ofeqav",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "oeksrnal0": {
+        "answer": "python",
+        "parent": "b14ofeqav",
+        "children": [
+            "bbm3kjjzo",
+            "a7tdzmf5r"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "bbm3kjjzo": {
+        "answer": "flask",
+        "parent": "oeksrnal0",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "a7tdzmf5r": {
+        "answer": "django",
+        "parent": "oeksrnal0",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "tid3n8bh9": {
+        "answer": "java",
+        "parent": "b14ofeqav",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "ropi6ujax": {
+        "answer": "kotlin",
+        "parent": "b14ofeqav",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "jnp7l8dre": {
+        "answer": "frontend lists",
+        "parent": "5fe0ox5ro",
+        "children": [
+            "vvy1x5nja",
+            "yo4dc7hgf",
+            "xf7rrpz66"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "vvy1x5nja": {
+        "answer": "Vuejs",
+        "parent": "jnp7l8dre",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "yo4dc7hgf": {
+        "answer": "React",
+        "parent": "jnp7l8dre",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "xf7rrpz66": {
+        "answer": "Vanilla JavaScript",
+        "parent": "jnp7l8dre",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "lfefvqfyf": {
+        "answer": "CSS",
+        "parent": "5fe0ox5ro",
+        "children": [
+            "0e6vfpdmg",
+            "xnsy7y2i0",
+            "dngmoz0in"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "0e6vfpdmg": {
+        "answer": "SASS",
+        "parent": "lfefvqfyf",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "xnsy7y2i0": {
+        "answer": "CSS3",
+        "parent": "lfefvqfyf",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "dngmoz0in": {
+        "answer": "SCSS",
+        "parent": "lfefvqfyf",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "xxeiuxpdi": {
+        "answer": "name",
+        "parent": "sl6l93qhk",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "h87n5ydwa": {
+        "answer": "Github link",
+        "parent": "sl6l93qhk",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "0456rl074": {
+        "answer": "location",
+        "parent": "sl6l93qhk",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "stqhfhtpn": {
+        "answer": "areas of specialty",
+        "parent": "sl6l93qhk",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "92p11samr": {
+        "answer": "whole team",
+        "parent": "u8559nqqz",
+        "children": [
+            "hv01wgxv8"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "7i1xhmntz": {
+        "answer": "individual",
+        "parent": "u8559nqqz",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "hv01wgxv8": {
+        "answer": "forum",
+        "parent": "92p11samr",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "stg8z6obj": {
+        "answer": "project creation panel",
+        "parent": "ya1cjp2ng",
+        "children": [
+            "hx4djvr9q",
+            "azo75vuh5",
+            "0lg6lfccp"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "hx4djvr9q": {
+        "answer": "description of the project",
+        "parent": "stg8z6obj",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "azo75vuh5": {
+        "answer": "visual of the project",
+        "parent": "stg8z6obj",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "0lg6lfccp": {
+        "answer": "price offered",
+        "parent": "stg8z6obj",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "v1sc0oiug": {
+        "answer": "articles",
+        "parent": "zl0jsbmub",
+        "children": [
+            "ionh3qrb4",
+            "678c5dmq4"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "jbgt8ww4h": {
+        "answer": "reference documents",
+        "parent": "zl0jsbmub",
+        "children": [
+            "th7l7j4at"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": [
+            "knsl32rng"
+        ]
+    },
+    "bhv0r8vgg": {
+        "answer": "hints at various locations around the app",
+        "parent": "zl0jsbmub",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "th7l7j4at": {
+        "answer": "project skeletons",
+        "parent": "jbgt8ww4h",
+        "children": [
+            "knsl32rng"
+        ],
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "knsl32rng": {
+        "answer": "skeletons posted on Github",
+        "parent": "th7l7j4at",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "ionh3qrb4": {
+        "answer": "teamwork-based",
+        "parent": "v1sc0oiug",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
+    },
+    "678c5dmq4": {
+        "answer": "programming-based",
+        "parent": "v1sc0oiug",
+        "children": null,
+        "completed": false,
+        "todoType": null,
+        "notes": null,
+        "dependentOn": []
     }
 }

@@ -47,6 +47,13 @@ const store = new Vuex.Store({
           state.answers[payload.parentID].children = [newKey];
         }
       }
+      if (store.getters.depth > 1 && store.getters.depth % 2 === 0) {
+        const grandparent = state.answers[payload.parentID].parent;
+        store.commit("updateDependents", {
+          grandparentKey: grandparent,
+          dependentKey: newKey
+        });
+      }
       if (!state.rootKey) {
         state.rootKey = newKey;
         state.parentKey = newKey;
@@ -88,6 +95,20 @@ const store = new Vuex.Store({
         }
       }
       state.answers = plannedProject;
+    },
+    updateDependents(state, payload) {
+      // payload has two properties: grandparentKey, dependentKey
+      console.log(state.answers[payload.grandparentKey]);
+      Vue.set(state.answers[payload.grandparentKey], "dependentOn", [
+        payload.dependentKey,
+        ...state.answers[payload.grandparentKey]["dependentOn"]
+      ]);
+    },
+    setParentKey(state, newParentKey) {
+      state.parentKey = newParentKey;
+    },
+    updateCompletionStatus(state, key) {
+      Vue.set(state.answers[key], "completed", !state.answers[key].completed);
     }
   }
 });
