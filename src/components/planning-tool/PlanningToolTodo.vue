@@ -1,6 +1,7 @@
 // Different types of to-dos: // 1. Research // 2. Get // 3. Create // Todos
 will fall into 2 categories: // 1. Actionable - can be done immediately // 2.
-Dependent - must be done after another task
+Dependent - must be done after another task // Be able to check as complete via
+screen // Show breadcrumb details above the todo as useful hints
 
 <template>
   <div>

@@ -26,7 +26,7 @@ export default {
           // store the user or wathever
           this.user = result.user.displayName;
           this.userID = result.user.uid;
-        })
+        });
     }
   }
 };
